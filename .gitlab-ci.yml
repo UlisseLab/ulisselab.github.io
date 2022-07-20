@@ -1,0 +1,39 @@
+#
+# Before using this .gitlab-ci.yml:
+#
+# - This example uses the latest Docker image, but you might want to use the
+#   exact version to avoid any broken pipelines.
+#   All available Hugo versions are listed under https://gitlab.com/pages/hugo/container_registry.
+# - Read about the difference between hugo and hugo_extended
+#   https://gitlab.com/pages/hugo/-/blob/main/README.md#hugo-vs-hugo_extended.
+# - To change the theme, see
+#   https://gitlab.com/pages/hugo/-/blob/main/README.md#use-a-custom-theme.
+#
+image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+
+# Set this if you intend to use Git submodules
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  HUGO_ENV: production
+
+default:
+  before_script:
+    - apk add --update --no-cache git go
+    - git submodule update --init --recursive
+    - hugo mod init gitlab.com/pages/hugo
+    - hugo mod get -u github.com/theNewDynamic/gohugo-theme-ananke
+
+test:
+  script:
+    - hugo
+  rules:
+    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
+
+pages:
+  script:
+    - hugo
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
