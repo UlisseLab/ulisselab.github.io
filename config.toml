@@ -1,28 +1,29 @@
 theme = "PaperMod"
 
-baseurl = "https://ulissecuritygroup.gitlab.io/"
 title = "Ulisse"
+baseurl = "https://ulissecuritygroup.gitlab.io/"
+paginate = 3
+defaultContentLanguage = 'en'
 
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
-
-languageCode = "it-IT"
-resourceDir = "../resources"
-
-DefaultContentLanguage = "it"
-SectionPagesMenu = "main"
-Paginate = 3                  # this is set low for demonstrating with dummy content. Set to a higher number
-googleAnalytics = ""
+enableInlineShortcodes = true
 enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+
+googleAnalytics = ""
 
 [languages.it]
+languageName = ":it:"
 weight = 1
-contentDir = "content/it"
+languageAltTitle = "Italiano"
 
 [languages.en]
+languageName = ':us:'
 weight = 2
-contentDir = "content/en"
+languageAltTitle = "English"
 
 
 [sitemap]
@@ -36,9 +37,12 @@ author = "Ulisse"
 favicon = ""
 site_logo = ""
 description = "The last theme you'll ever need. Maybe."
-# choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
 background_color_class = "bg-black"
 recent_posts_number = 3
+ShowReadingTime = true
+ShowBreadCrumbs = true
+
+displayFullLangName = true # Language emojis
 
 socialIcons = [
   { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
@@ -46,21 +50,40 @@ socialIcons = [
   { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
 ]
 
-[params.profileMode]
+[languages.it.params.profileMode]
 enabled = true
 title = "Team CTF Ulisse"
 imageUrl = "/logo_640x640.jpg"
 imageTitle = "Ulisse Logo"
+buttons = [
+  { name = "📒 Writeups", url = "/writeups/" },
+  { name = "Laboratorio", url = "https://ulisse.unibo.it" },
+]
+
 [languages.en.params.profileMode]
 enabled = true
 title = "Ulisse CTF Team"
 imageUrl = "/logo_640x640.jpg"
 imageTitle = "Ulisse Logo"
+buttons = [
+  { name = "📒 Writeups", url = "/writeups/" },
+  { name = "Laboratory", url = "https://ulisse.unibo.it" },
+]
 
-[[params.profileMode.buttons]]
-name = "Sito web del Laboratorio"
-url = "https://ulisse.unibo.it"
 
-[[languages.en.params.profileMode.buttons]]
-name = "Laboratory Website"
-url = "https://ulisse.unibo.it"
+[languages.it.menu]
+main = [
+  { name = "Writeups", url = "/writeups/" },
+  { name = "Team", url = "/team/" },
+]
+
+[languages.en.menu]
+main = [
+  { name = "Writeups", url = "/writeups/" },
+  { name = "Team", url = "/team/" },
+]
+
+
+[taxonomies]
+author = "authors"
+tag = "tags"
