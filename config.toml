@@ -1,6 +1,6 @@
 theme = "PaperMod"
 
-title = "Ulisse"
+title = "Ulisse - CTF Team"
 baseurl = "https://ulissecuritygroup.gitlab.io/"
 paginate = 3
 defaultContentLanguage = 'en'
@@ -16,6 +16,7 @@ pygmentsUseClasses = true
 googleAnalytics = ""
 
 [languages.it]
+title = "Ulisse - Team CTF"
 languageName = ":it:"
 weight = 1
 languageAltTitle = "Italiano"
@@ -35,19 +36,31 @@ filename = "sitemap.xml"
 text_color = ""
 author = "Ulisse"
 favicon = ""
-site_logo = ""
-description = "The last theme you'll ever need. Maybe."
+site_logo = "logo_640x640.jpg"
+description = "Ulisse Laboratory CTF Team Website and Blog"
 background_color_class = "bg-black"
 recent_posts_number = 3
 ShowReadingTime = true
 ShowBreadCrumbs = true
+displayFullLangName = true                                  # Language emojis
 
-displayFullLangName = true # Language emojis
+[languages.it.params]
+description = "Sito web e Blog del Team CTF - Lab Ulisse"
+text_color = ""
+author = "Ulisse"
+favicon = ""
+site_logo = "logo_640x640.jpg"
+background_color_class = "bg-black"
+recent_posts_number = 3
+ShowReadingTime = true
+ShowBreadCrumbs = true
+displayFullLangName = true  
 
-[languages.en.params.editPost]
+[params.editPost]
 URL = "https://gitlab.com/ULISSecurityGroup/ulissecuritygroup.gitlab.io/-/tree/master/content"
 Text = "Suggest Changes"
 appendFilePath = true
+
 [languages.it.params.editPost]
 URL = "https://gitlab.com/ULISSecurityGroup/ulissecuritygroup.gitlab.io/-/tree/master/content"
 Text = "Proponi delle modifiche"
@@ -59,24 +72,23 @@ socialIcons = [
   { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
 ]
 
-[languages.it.params.profileMode]
-enabled = true
-title = "Team CTF Ulisse"
-imageUrl = "/logo_640x640.jpg"
-imageTitle = "Ulisse Logo"
-buttons = [
-  { name = "📒 Writeups", url = "/writeups/" },
-  { name = "Laboratorio", url = "https://ulisse.unibo.it" },
-]
 
-[languages.en.params.profileMode]
+[params.profileMode]
 enabled = true
-title = "Ulisse CTF Team"
 imageUrl = "/logo_640x640.jpg"
 imageTitle = "Ulisse Logo"
 buttons = [
   { name = "📒 Writeups", url = "/writeups/" },
   { name = "Laboratory", url = "https://ulisse.unibo.it" },
+]
+
+[languages.it.params.profileMode]
+enabled = true
+imageUrl = "/logo_640x640.jpg"
+imageTitle = "Ulisse Logo"
+buttons = [
+  { name = "📒 Writeups", url = "/writeups/" },
+  { name = "Laboratorio", url = "https://ulisse.unibo.it" },
 ]
 
 
