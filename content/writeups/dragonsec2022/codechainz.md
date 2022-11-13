@@ -1,11 +1,10 @@
 ---
 title: Codechainz
 author: Patrick
+ShowToc: true
 ---
 
 > This is Codechain's older brother, Codechainz
-
-### Files
 
 ### What's going on?
 

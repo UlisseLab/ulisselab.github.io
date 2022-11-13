@@ -1,12 +1,12 @@
 ---
 title: Bookstore.json
 author: Eyad Issa
+ShowToc: true
 ---
 
 The Bookstore.java challenge stated that:
 
 > Web developer left the company becouse he was not being paid. He left some hidden features for him, to bypass security. Can you find the vunerability? http://book-store.dragonsec.si
-{.is-info}
 
 
 And gave us a [`book_store.jar`](/ctf/dragonsec-2022/bookstore/book_store.jar) file.
@@ -41,7 +41,6 @@ conn.setRequestProperty("not-found", System.getenv("NOT_FOUND"));
 We're given a hint:
 
 > Method how the salt is generated is given through variable names in one java class. The salt is 8 chars long.
-{.is-info}
 
 If we look at the class `Art` we can see that there are two strange variable names:
 
@@ -61,4 +60,3 @@ If we join the most repeated letter of each paragraph we get the salt and then w
 > Salt: `oeeeeooo`
 
 > Flag: `dctf{L0g_4_hid3n_d@7@_n0t_s0_h@rd_righ7}`
-{.is-success}     

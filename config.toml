@@ -41,6 +41,7 @@ background_color_class = "bg-black"
 recent_posts_number = 3
 ShowReadingTime = true
 ShowBreadCrumbs = true
+ShowShareButtons= true
 
 displayFullLangName = true # Language emojis
 

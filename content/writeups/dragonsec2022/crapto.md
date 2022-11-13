@@ -1,6 +1,7 @@
 ---
 title: Crapto
 author: "Fuo"
+ShowToc: true
 tags:
   - misc
   - rfid
@@ -12,7 +13,7 @@ tags:
 
 ### Files
 
-[keyfob.trace](/ctf/dragonsec-2022/crapto/keyfob.trace)
+[keyfob.trace](https://wiki-ulisse.fuo.fi/ctf/dragonsec-2022/crapto/keyfob.trace)
 
 ### What's going on?
 
@@ -41,7 +42,6 @@ Following the challenge title, we tried `trace list mf 1` in order to decrypt cr
 We got the flag:
 
 > `dctf{wh4t_15_g00d_prng_51fb12a0}`
-> {.is-success}
 
 ### Sources
 
