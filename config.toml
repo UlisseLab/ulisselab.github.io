@@ -44,6 +44,15 @@ ShowBreadCrumbs = true
 
 displayFullLangName = true # Language emojis
 
+[languages.en.params.editPost]
+URL = "https://gitlab.com/ULISSecurityGroup/ulissecuritygroup.gitlab.io/-/tree/master/content"
+Text = "Suggest Changes"
+appendFilePath = true
+[languages.it.params.editPost]
+URL = "https://gitlab.com/ULISSecurityGroup/ulissecuritygroup.gitlab.io/-/tree/master/content"
+Text = "Proponi delle modifiche"
+appendFilePath = true
+
 socialIcons = [
   { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
   { name = "github", url = "https://github.com/UlisseLab" },
