@@ -2,6 +2,7 @@
 title: Codechainz
 author: Patrick
 ShowToc: true
+date: 2022-04-18
 ---
 
 > This is Codechain's older brother, Codechainz

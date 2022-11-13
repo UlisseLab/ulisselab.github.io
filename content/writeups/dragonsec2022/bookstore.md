@@ -2,6 +2,7 @@
 title: Bookstore.json
 author: Eyad Issa
 ShowToc: true
+date: 2022-04-18
 ---
 
 The Bookstore.java challenge stated that:

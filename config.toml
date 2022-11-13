@@ -41,7 +41,6 @@ background_color_class = "bg-black"
 recent_posts_number = 3
 ShowReadingTime = true
 ShowBreadCrumbs = true
-ShowShareButtons= true
 
 displayFullLangName = true # Language emojis
 
@@ -81,16 +80,11 @@ buttons = [
 ]
 
 
-[languages.it.menu]
+[menu]
 main = [
   { name = "Writeups", url = "/writeups/" },
   { name = "Team", url = "/team/" },
-]
-
-[languages.en.menu]
-main = [
-  { name = "Writeups", url = "/writeups/" },
-  { name = "Team", url = "/team/" },
+  { name = 'Archive', url = '/archives/' },
 ]
 
 

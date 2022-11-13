@@ -1,7 +1,8 @@
 ---
 title: Crapto
-author: "Fuo"
+author: "Karina"
 ShowToc: true
+date: 2022-04-20
 tags:
   - misc
   - rfid
