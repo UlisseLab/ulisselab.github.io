@@ -2,7 +2,7 @@ theme = "PaperMod"
 
 title = "Ulisse - CTF Team"
 baseurl = "https://ulissecuritygroup.gitlab.io/"
-paginate = 3
+paginate = 6
 defaultContentLanguage = 'en'
 
 enableInlineShortcodes = true
