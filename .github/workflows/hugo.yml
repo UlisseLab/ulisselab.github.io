@@ -49,7 +49,7 @@ jobs:
       - name: Change references to gitlab
         run: |
           sed "s/https:\/\/ulissecuritygroup.gitlab.io\//https:\/\/ulisselab.github.io\//" -i config.toml
-          sed "s/https:\/\/gitlab.com\/ULISSecurityGroup\/ulissecuritygroup.gitlab.io\//https:\/\/github.com\/UlisseLab\/ulisselab.github.io\//" -i config.toml
+          sed "s/https:\/\/gitlab.com\/ULISSecurityGroup\/ulissecuritygroup.gitlab.io\/-\/tree\/master\//https:\/\/github.com\/UlisseLab\/ulisselab.github.io\/blob\/main\//" -i config.toml
 
       - name: Build with Hugo
         env:
