@@ -42,7 +42,13 @@ background_color_class = "bg-black"
 recent_posts_number = 3
 ShowReadingTime = true
 ShowBreadCrumbs = true
-displayFullLangName = true                                  # Language emojis
+displayFullLangName = true # Language emojis
+socialIcons = [
+  { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
+  { name = "github", url = "https://github.com/UlisseLab" },
+  { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
+  { name = "dev", url = "https://dev.to/ulisse" },
+]
 
 [languages.it.params]
 description = "Sito web e Blog del Team CTF - Lab Ulisse"
@@ -54,7 +60,14 @@ background_color_class = "bg-black"
 recent_posts_number = 3
 ShowReadingTime = true
 ShowBreadCrumbs = true
-displayFullLangName = true  
+displayFullLangName = true
+socialIcons = [
+  { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
+  { name = "github", url = "https://github.com/UlisseLab" },
+  { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
+  { name = "dev", url = "https://dev.to/ulisse" },
+]
+
 
 [params.editPost]
 URL = "https://gitlab.com/ULISSecurityGroup/ulissecuritygroup.gitlab.io/-/tree/master/content"
@@ -65,12 +78,6 @@ appendFilePath = true
 URL = "https://gitlab.com/ULISSecurityGroup/ulissecuritygroup.gitlab.io/-/tree/master/content"
 Text = "Proponi delle modifiche"
 appendFilePath = true
-
-socialIcons = [
-  { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
-  { name = "github", url = "https://github.com/UlisseLab" },
-  { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
-]
 
 
 [params.profileMode]
