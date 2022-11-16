@@ -44,7 +44,7 @@ ShowReadingTime = true
 ShowBreadCrumbs = true
 displayFullLangName = true # Language emojis
 socialIcons = [
-  { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
+  { name = "twitter", url = "https://twitter.com/ULISSecurity" },
   { name = "github", url = "https://github.com/UlisseLab" },
   { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
   { name = "dev", url = "https://dev.to/ulisse" },
