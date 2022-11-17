@@ -103,9 +103,8 @@ buttons = [
 
 [menu]
 main = [
-  { name = "Writeups", url = "/writeups/" },
-  { name = "Team", url = "/team/" },
   { name = 'Archive', url = '/archives/' },
+  { name = "Writeups", url = "/writeups/" },
 ]
 
 
