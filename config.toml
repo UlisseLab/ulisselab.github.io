@@ -1,7 +1,7 @@
 theme = "PaperMod"
 
 title = "Ulisse - CTF Team"
-baseurl = "https://ulissecuritygroup.gitlab.io/"
+baseurl = "https://ulisselab.github.io/"
 paginate = 6
 defaultContentLanguage = 'en'
 
@@ -72,12 +72,12 @@ socialIcons = [
 
 
 [params.editPost]
-URL = "https://gitlab.com/ULISSecurityGroup/ulissecuritygroup.gitlab.io/-/tree/master/content"
+URL = "https://github.com/UlisseLab/ulisselab.github.io/blob/main/content"
 Text = "Suggest Changes"
 appendFilePath = true
 
 [languages.it.params.editPost]
-URL = "https://gitlab.com/ULISSecurityGroup/ulissecuritygroup.gitlab.io/-/tree/master/content"
+URL = "https://github.com/UlisseLab/ulisselab.github.io/blob/main/content"
 Text = "Proponi delle modifiche"
 appendFilePath = true
 
