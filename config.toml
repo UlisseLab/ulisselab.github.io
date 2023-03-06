@@ -30,7 +30,7 @@ filename = "sitemap.xml"
 text_color = ""
 author = "Ulisse"
 favicon = ""
-site_logo = "logo_640x640.jpg"
+site_logo = "logo_640x640.avif"
 description = "Ulisse Laboratory CTF Team Website and Blog"
 background_color_class = "bg-black"
 recent_posts_number = 3
@@ -54,7 +54,7 @@ appendFilePath = true
 
 [params.profileMode]
 enabled = true
-imageUrl = "/logo_640x640.jpg"
+imageUrl = "logo.webp"
 imageTitle = "Ulisse Logo"
 buttons = [
   { name = "📒 Writeups", url = "/writeups/" },
