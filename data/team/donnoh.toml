@@ -1,0 +1,11 @@
+name = "donnoh"
+role = "Member and Speaker"
+website = "https=//lucadonnoh.github.io/"
+skills = [
+    "Blockchain Security",
+    "Theoretical Computer Science",
+    "Zero-Knowledge Proofs",
+]
+
+
+years = [2023, 2022]

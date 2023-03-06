@@ -1,0 +1,24 @@
+<div>
+
+    <h3 style="font-weight: bold;">{{ .name }} {{if .nickname}} ({{.nickname}}) {{end}}</h3>
+    <p>
+        {{ if .role}}
+        <em>{{ .role }}</em>
+        {{ end }}
+        {{ if .email}}
+        | <a href="mailto:{{ .email }}">📧</a>
+        {{ end }}
+        {{ if .website}}
+        | <a href="{{ .website }}">🌐</a>
+        {{ end }}
+    </p>
+
+    {{ if .skills }}
+    <h4>Skills</h4>
+    <ul>
+        {{ range .skills }}
+        <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</div>

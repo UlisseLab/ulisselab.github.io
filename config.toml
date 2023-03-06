@@ -15,12 +15,6 @@ pygmentsUseClasses = true
 
 googleAnalytics = ""
 
-[languages.it]
-title = "Ulisse - Team CTF"
-languageName = ":it:"
-weight = 1
-languageAltTitle = "Italiano"
-
 [languages.en]
 languageName = ':us:'
 weight = 2
@@ -51,34 +45,10 @@ socialIcons = [
   { name = "mastodon", url = "https://kiwi.fuo.fi/@ulissecurity" },
 ]
 
-[languages.it.params]
-description = "Sito web e Blog del Team CTF - Lab Ulisse"
-text_color = ""
-author = "Ulisse"
-favicon = ""
-site_logo = "logo_640x640.jpg"
-background_color_class = "bg-black"
-recent_posts_number = 3
-ShowReadingTime = true
-ShowBreadCrumbs = true
-displayFullLangName = true
-socialIcons = [
-  { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
-  { name = "github", url = "https://github.com/UlisseLab" },
-  { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
-  { name = "dev", url = "https://dev.to/ulisse" },
-  { name = "mastodon", url = "https://kiwi.fuo.fi/@ulissecurity" },
-]
-
 
 [params.editPost]
 URL = "https://github.com/UlisseLab/ulisselab.github.io/blob/main/content"
 Text = "Suggest Changes"
-appendFilePath = true
-
-[languages.it.params.editPost]
-URL = "https://github.com/UlisseLab/ulisselab.github.io/blob/main/content"
-Text = "Proponi delle modifiche"
 appendFilePath = true
 
 
@@ -88,25 +58,17 @@ imageUrl = "/logo_640x640.jpg"
 imageTitle = "Ulisse Logo"
 buttons = [
   { name = "📒 Writeups", url = "/writeups/" },
-  { name = "Laboratory", url = "https://ulisse.unibo.it" },
-]
-
-[languages.it.params.profileMode]
-enabled = true
-imageUrl = "/logo_640x640.jpg"
-imageTitle = "Ulisse Logo"
-buttons = [
-  { name = "📒 Writeups", url = "/writeups/" },
-  { name = "Laboratorio", url = "https://ulisse.unibo.it" },
+  { name = "🧑‍💻 Team", url = "/team/" },
 ]
 
 
 [menu]
 main = [
-  { name = 'Archive', url = '/archives/' },
-  { name = "Writeups", url = "/writeups/" },
+  { weight = 1, name = "📒 Writeups", url = "/writeups/" },
+  { weight = 2, name = "🧑‍💻 Team", url = "/team/" },
+  { weight = 3, name = '🗄️ Archive', url = '/archives/' },
+  { weight = 4, name = "🖋️ Wiki", url = "https://wiki-ulisse.fuo.fi" },
 ]
-
 
 [taxonomies]
 author = "authors"

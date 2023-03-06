@@ -1,0 +1,20 @@
+<h2>Membri attivi</h2>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr;">
+    {{ range $.Site.Data.team }}
+    {{ if eq (index .years 0) (now.Year) }}
+        {{ partial "member.html" . }}
+    {{ end }}
+    {{ end }}
+</div>
+
+<details style="margin-top: 2rem">
+    <summary style="list-style: none;">
+        <h2 style="display: inline; text-decoration: underline; cursor: pointer;">Membri inattivi</h2>
+    </summary>
+    {{ range $.Site.Data.team }}
+    {{ if ne (index .years 0) (now.Year) }}
+        {{ partial "member.html" . }}
+    {{ end }}
+    {{ end }}
+</details>
