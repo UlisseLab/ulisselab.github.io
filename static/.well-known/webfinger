@@ -1,0 +1,23 @@
+{
+  "subject": "acct:ulissecurity@kiwi.fuo.fi",
+  "aliases": [
+    "https://kiwi.fuo.fi/@ulissecurity",
+    "https://kiwi.fuo.fi/users/@ulissecurity"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://kiwi.fuo.fi/@ulissecurity"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://kiwi.fuo.fi/users/@ulissecurity"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://kiwi.fuo.fi/authorize_interaction?uri={uri}"
+    }
+  ]
+}
