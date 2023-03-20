@@ -1,5 +1,4 @@
 ---
 title: IJCTF 2020
+hideMeta: true
 ---
-
-Write Ups of our challenges solve during IJCTF CTF 2020
