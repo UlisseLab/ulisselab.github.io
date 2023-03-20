@@ -2,6 +2,7 @@
 title: Padlock
 date: 2023-03-20
 author: VaiTon
+tags: [c, quine]
 ---
 
 ### Challenge description
