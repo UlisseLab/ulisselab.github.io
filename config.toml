@@ -1,5 +1,3 @@
-theme = "PaperMod"
-
 title = "Ulisse - CTF Team"
 baseurl = "https://ulisselab.github.io/"
 paginate = 6
@@ -15,9 +13,15 @@ pygmentsUseClasses = true
 
 googleAnalytics = ""
 
+[module]
+[[module.imports]]
+path = "github.com/adityatelange/hugo-PaperMod"
+
 [languages.en]
 languageName = ':us:'
 weight = 2
+
+[languages.en.params]
 languageAltTitle = "English"
 
 
