@@ -1,0 +1,10 @@
+name = "Alan Davide Bovo"
+nickname = "Hecker404"
+
+skills = ["Web", "Pwn"]
+website = "https://albovo.github.io/"
+
+
+role = "Member"
+active = true
+years = [2023]

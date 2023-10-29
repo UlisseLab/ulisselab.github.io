@@ -1,9 +1,10 @@
-nickname = "fuomag"
-years = [2023, 2022, 2021]
-
-role = "Member and Speaker"
+name = "fuomag"
 
 email = "fuomag@gmail.com"
 website = "https://fuo.fi"
 
 skills = ["Web", "Reverse engineering", "OSINT"]
+
+role = "Member and Speaker"
+years = [2023, 2022, 2021]
+active = true

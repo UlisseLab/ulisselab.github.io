@@ -1,5 +1,5 @@
 name = "donnoh"
-role = "Member and Speaker"
+
 website = "https://lucadonnoh.github.io/"
 skills = [
     "Blockchain Security",
@@ -8,4 +8,6 @@ skills = [
 ]
 
 
+active = true
 years = [2023, 2022]
+role = "Member and Speaker"

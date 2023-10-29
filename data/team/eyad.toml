@@ -1,10 +1,11 @@
 name = "Eyad Issa"
 nickname = "VaiTon"
 
-years = [2023, 2022]
-role = "Member and Co-Lead"
-
 email = "eyadlorenzo.issa@studio.unibo.it"
 website = "https://github.com/vaiton"
 
-skills = ["Web exploitation", "System administration"]
+skills = ["Web exploitation", "System administration", "Forensics"]
+
+active = true
+years = [2023, 2022]
+role = "Member and Co-Lead"

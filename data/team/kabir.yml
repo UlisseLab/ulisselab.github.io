@@ -1,6 +1,6 @@
 name: Kabir
 nickname: amnesy
-role: Active member
+role: Member
 email: amnesy@mintly.it
 skills:
   - Web
@@ -8,4 +8,5 @@ skills:
   - Network Analysis
   - Insulting PHP
 
+active: false
 years: [2023]
