@@ -282,3 +282,7 @@ a = Thread(target=solve)
 a.start()
 print('thread started')
 ```
+
+```text
+srdnlen{XSSS_cr0Ss_S1T3_sP0nG3wEb_SQLi}
+```
