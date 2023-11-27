@@ -1,6 +1,6 @@
 <div>
 
-    <h3 style="font-weight: bold;">{{ .name }} {{if .nickname}} ({{.nickname}}) {{end}}</h3>
+    <h3 style="font-weight: bold;">{{ .name }} {{if .nickname}} (aka <code>{{.nickname}}</code>) {{end}}</h3>
     <p>
         {{ if not .active}}
         <em>Former member</em>
