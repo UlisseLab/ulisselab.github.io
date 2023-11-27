@@ -2,6 +2,7 @@
 title = "WAF Protected Shop"
 toc = true
 author = "Mastr0"
+date = "2023-11-25"
 +++
 
 # WAF Protected Shop (aizoOn)
@@ -78,7 +79,7 @@ Another quick search encourages us to continue following this path:
 ![](img13.png)
 Mh, maybe if we try to reach that total size only for parameters, the WAF is gonna act weird.
 
-# &catid=WAF Bypass/solution
+## &catid=WAF Bypass/solution
 
 Let's try to send a request where all the selected parameters have a total size of 7903 bytes
 
