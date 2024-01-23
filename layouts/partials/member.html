@@ -1,6 +1,14 @@
 <div>
 
-    <h3 style="font-weight: bold;">{{ .name }} {{if .nickname}} (aka <code>{{.nickname}}</code>) {{end}}</h3>
+    <h3 style="font-weight: bold;">
+        {{if and .name .nickname}}
+        <em>{{.nickname}}</em> - {{ .name }}
+        {{else if .name}}
+        {{ .name }}
+        {{else if .nickname}}
+        <em>{{.nickname}}</em>
+        {{end}}
+    </h3>
     <p>
         {{ if not .active}}
         <em>Former member</em>
@@ -9,10 +17,10 @@
         <em>{{ .role }}</em>
         {{ end }}
         {{ if .email}}
-        | <a href="mailto:{{ .email }}">📧</a>
+        | <a href="mailto:{{ .email }}" title="{{ .nickname }}'s email address">📧</a>
         {{ end }}
         {{ if .website}}
-        | <a href="{{ .website }}">🌐</a>
+        | <a href=" {{ .website }}" title="{{.nickname}}'s website">🌐</a>
         {{ end }}
     </p>
 

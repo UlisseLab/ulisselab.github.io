@@ -1,0 +1,11 @@
+name = "Lorenzo Guerra"
+nickname = "wor"
+
+role = "Member"
+email = "guerralorenzo@proton.me"
+website = "https://lorenzo9uerra.github.io"
+
+skills = ["PWN", "Crypto", "System Administration"]
+years = [2023]
+
+active = false

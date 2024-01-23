@@ -1,22 +1,23 @@
-<h2>Membri attivi</h2>
+<div>
+    <h2>Membri attivi</h2>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr;">
-    {{ range $.Site.Data.team }}
-        {{ if .active }}
-            {{ partial "member.html" . }}
-        {{ end }}
-    {{ end }}
-</div>
-
-<details style="margin-top: 2rem">
-    <summary style="list-style: none;">
-        <h2 style="display: inline; text-decoration: underline; cursor: pointer;">Membri inattivi</h2>
-    </summary>
     <div style="display: grid; grid-template-columns: 1fr 1fr;">
         {{ range $.Site.Data.team }}
-            {{ if not .active  }}
-                {{ partial "member.html" . }}
-            {{ end }}
+        {{ if .active }}
+        {{ partial "member.html" . }}
+        {{ end }}
         {{ end }}
     </div>
-</details>
+</div>
+
+<div style="margin-top: 2rem">
+    <h2>Membri inattivi</h2>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        {{ range $.Site.Data.team }}
+        {{ if not .active  }}
+        {{ partial "member.html" . }}
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
