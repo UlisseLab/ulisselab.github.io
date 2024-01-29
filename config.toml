@@ -71,7 +71,7 @@ main = [
   { weight = 1, name = "📒 Writeups", url = "/writeups/" },
   { weight = 2, name = "🧑‍💻 Team", url = "/team/" },
   { weight = 3, name = '🗄️ Archive', url = '/archives/' },
-  { weight = 4, name = "🖋️ Wiki", url = "https://wiki-ulisse.fuo.fi" },
+  { weight = 4, name = "🖋️ Wiki", url = "https://ctf.ulis.se/wiki" },
 ]
 
 [taxonomies]
