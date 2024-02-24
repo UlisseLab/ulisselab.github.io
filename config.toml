@@ -68,10 +68,11 @@ buttons = [
 
 [menu]
 main = [
-  { weight = 1, name = "📒 Writeups", url = "/writeups/" },
-  { weight = 2, name = "🧑‍💻 Team", url = "/team/" },
-  { weight = 3, name = '🗄️ Archive', url = '/archives/' },
-  { weight = 4, name = "🖋️ Wiki", url = "https://ctf.ulis.se/wiki" },
+  { weight = 1, name = "📰 News", url = "/news/" },
+  { weight = 2, name = "📒 Writeups", url = "/writeups/" },
+  { weight = 3, name = "🧑‍💻 Team", url = "/team/" },
+  { weight = 4, name = '🗄️ Archive', url = '/archives/' },
+  { weight = 5, name = "🖋️ Wiki", url = "https://ctf.ulis.se/wiki" },
 ]
 
 [taxonomies]
