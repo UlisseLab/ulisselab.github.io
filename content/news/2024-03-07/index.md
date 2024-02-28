@@ -9,11 +9,12 @@ tags = ["incontri"]
 **Luogo:** Laboratorio 3, Plesso Risorgimento \
 **Indirizzo:** Via Risorgimento 2, Bologna
 
-![Banner](./banner.png)
+![Banner](banner.png)
 
 **Programma:**
 
 * Breve introduzione al gruppo
+* Introduzione alle Capture The Flag (CTF) per i nuovi
 * CyberCup 2024, come sta andando?
 * \[REDACTED\]
 * Prossimi eventi e CTF

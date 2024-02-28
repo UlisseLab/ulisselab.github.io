@@ -1,0 +1,25 @@
+{{ $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) }}
+{{- if eq $image nil -}}
+<p> Image not found! </p>
+{{- else -}}
+
+{{ $webp := $image.Process "webp" }}
+{{ $png := $image.Process "png" }}
+
+{{- if .IsBlock -}}
+<figure>
+    {{- end -}}
+    <picture>
+        {{- with $webp -}}
+        <source type="image/webp" srcset="{{ .RelPermalink }}">
+        {{- end -}}
+
+        <img src="{{ $png.RelPermalink }}" {{- with .Text }} alt="{{ . }}" {{ end -}} {{- with .Title }} title="{{ . }}"
+            {{ end -}} loading="lazy">
+    </picture>
+
+    {{- if .IsBlock -}}
+    <figcaption>{{ .Title }}</figcaption>
+</figure>
+{{- end -}}
+{{- end -}}
