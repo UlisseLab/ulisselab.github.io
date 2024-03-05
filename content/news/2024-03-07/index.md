@@ -9,11 +9,9 @@ tags = ["incontri"]
 **Luogo:** Laboratorio 2, Plesso Risorgimento \
 **Indirizzo:** Via Risorgimento 2, Bologna
 
-{{< alert type="warning" title="Attenzione!" >}}
-
+{{< notice warning >}}
 Il volantino che potresti aver visto in giro è **sbagliato**. Il luogo è **Laboratorio 2** e non Laboratorio 3.
-
-{{</ alert >}}
+{{</ notice >}}
 
 ![Banner](banner.png)
 
