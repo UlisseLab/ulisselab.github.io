@@ -1,0 +1,70 @@
+{{ $isNamedParams := .IsNamedParams }}
+{{ $type := "info" }}
+{{ if and $isNamedParams (.Get "type") }}
+{{ $type = .Get "type" }}
+{{ end }}
+
+{{ $borderColor := "" }}
+{{ if eq $type "info" }}
+{{ $borderColor = "#5bc0de" }}
+{{ else if eq $type "warning" }}
+{{ $borderColor = "#f0ad4e" }}
+{{ else if eq $type "danger" }}
+{{ $borderColor = "#d9534f" }}
+{{ else if eq $type "success" }}
+{{ $borderColor = "#5cb85c" }}
+{{ end }}
+
+{{ $color := ""}}
+{{ if eq $type "info" }}
+{{ $color = "#31708f" }}
+{{ else if eq $type "warning" }}
+{{ $color = "#8a6d3b" }}
+{{ else if eq $type "danger" }}
+{{ $color = "#a94442" }}
+{{ else if eq $type "success" }}
+{{ $color = "#3c763d" }}
+{{ end }}
+
+{{ $icon := "" }}
+{{ if and $isNamedParams (.Get "icon") }}
+{{ $icon = .Get "icon" }}
+{{ else }}
+{{ if eq $type "info" }}
+{{ $icon = ":information_source:" }}
+{{ else if eq $type "warning" }}
+{{ $icon = ":warning:" }}
+{{ else if eq $type "danger" }}
+{{ $icon = ":x:" }}
+{{ else if eq $type "success" }}
+{{ $icon = ":heavy_check_mark:" }}
+{{ end }}
+{{ end }}
+
+{{ $title := "" }}
+{{ if and $isNamedParams (.Get "title") }}
+{{ $title = .Get "title" }}
+{{ else }}
+{{ if eq $type "info" }}
+{{ $title = "Information" }}
+{{ else if eq $type "warning" }}
+{{ $title = "Warning" }}
+{{ else if eq $type "danger" }}
+{{ $title = "Danger" }}
+{{ else if eq $type "success" }}
+{{ $title = "Success" }}
+{{ end }}
+{{ end }}
+
+
+<blockquote style="border-color: {{ $borderColor }}; background-color: ">
+    <p style="color: {{$color}}; margin-bottom: 0.2rem">
+        <span style="margin-inline-end: .5rem;"> {{ emojify $icon }} </span>
+        <strong>
+            {{ $title }}
+        </strong>
+    </p>
+    <p>
+        {{ markdownify .Inner }}
+    </p>
+</blockquote>
