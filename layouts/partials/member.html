@@ -1,35 +1,29 @@
 <div>
-
-    <h3 style="font-weight: bold;">
-        {{if and .name .nickname}}
-        <em>{{.nickname}}</em> - {{ .name }}
-        {{else if .name}}
-        {{ .name }}
-        {{else if .nickname}}
-        <em>{{.nickname}}</em>
-        {{end}}
+    <h3>
+        {{- if and .name .nickname -}}
+        <code>{{- .nickname -}}</code> ({{- .name -}})
+        {{- else if .name -}}
+        {{- .name -}}
+        {{- else if .nickname -}}
+        <code>{{- .nickname -}}</code>
+        {{- end -}}
     </h3>
     <p>
-        {{ if not .active}}
-        <em>Former member</em>
+        {{ with .role}}
+        <strong>Role: </strong>
+        {{ . }}
         {{ end }}
-        {{ if and .role .active}}
-        <em>{{ .role }}</em>
-        {{ end }}
-        {{ if .email}}
-        | <a href="mailto:{{ .email }}" title="{{ .nickname }}'s email address">📧</a>
-        {{ end }}
-        {{ if .website}}
-        | <a href=" {{ .website }}" title="{{.nickname}}'s website">🌐</a>
-        {{ end }}
-    </p>
 
-    {{ if .skills }}
-    <h4>Skills</h4>
-    <ul>
-        {{ range .skills }}
-        <li>{{ . }}</li>
+        {{- if .email }} | <a href="mailto:{{ .email }}" title="{{ .nickname }}'s email address">📧</a> {{- end -}}
+
+        {{- if .website }} | <a href=" {{ .website }}" title="{{ .nickname }}'s website">🌐</a> {{- end }}
+
+        <br />
+
+        {{ with .skills }}
+        <strong>Skills: </strong>
+        <span> {{ delimit . ", " }} </span>
         {{ end }}
-    </ul>
-    {{ end }}
+
+    </p>
 </div>
