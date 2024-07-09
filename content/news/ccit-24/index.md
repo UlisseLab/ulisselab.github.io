@@ -1,8 +1,10 @@
 +++
 title = "Ulisse @ CyberChallenge.IT 2024"
 date = "2024-07-09"
-thumbnail = "photo_2024-07-05_20-09-28.jpg"
-image = "photo_2024-07-05_20-09-28.jpg"
+cover.image = "photo_2024-07-05_20-09-28.jpg"
+cover.caption = "Il team di Ulisse al CyberChallenge.IT 2024"
+cover.alt = "Foto di gruppo del team di Ulisse al CyberChallenge.IT 2024 con le medaglie"
+cover.relative = true
 +++
 
 Anche quest'anno l'Università di Bologna ha preso parte a [CyberChallenge.IT](https://cyberchallenge.it/), la competizione nazionale di cybersecurity organizzata dal Cybersecurity National Lab.
@@ -13,7 +15,6 @@ Il team, composto da Alan Davide Bovo, Giacomo Boschi, Davide Gianessi, Renato E
 
 Grazie al loro impegno e alle loro competenze, il team ha conquistato un eccellente **3° posto**, totalizzando 108.631 punti, posizionandosi dietro solo a PoliTo e Sapienza.
 
-![Foto dei partecipanti con la medaglia](photo_2024-07-05_20-09-28.jpg)
 
 ![Presentazione del team](team.jpeg)
 
