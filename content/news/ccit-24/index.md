@@ -1,6 +1,8 @@
 +++
 title = "Ulisse @ CyberChallenge.IT 2024"
 date = "2024-07-09"
+thumbnail = "photo_2024-07-05_20-09-28.jpg"
+image = "photo_2024-07-05_20-09-28.jpg"
 +++
 
 Anche quest'anno l'Università di Bologna ha preso parte a [CyberChallenge.IT](https://cyberchallenge.it/), la competizione nazionale di cybersecurity organizzata dal Cybersecurity National Lab.
