@@ -1,8 +1,0 @@
-name = "Patrick Papa"
-nickname = "pouup"
-photo = "unknown.png"
-role = "Member"
-email = "patrick.papa@studio.unibo.it"
-years = [2023]
-skills = ["Crypto", "PWN", "Crying without tears /s"]
-active = false

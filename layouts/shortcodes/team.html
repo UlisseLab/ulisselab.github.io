@@ -1,4 +1,4 @@
-{{- $team := collections.Sort .Site.Data.team "nickname" -}}
+{{- $team := collections.Sort .Site.Data.team.members "nickname" -}}
 {{- $active := where $team "active" true -}}
 {{- $inactive := where $team "active" false -}}
 

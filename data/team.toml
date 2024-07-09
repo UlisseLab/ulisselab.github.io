@@ -1,0 +1,125 @@
+[[members]]
+nickname = "donnoh"
+
+website = "https://lucadonnoh.github.io/"
+skills = [
+    "Blockchain Security",
+    "Theoretical Computer Science",
+    "Zero-Knowledge Proofs",
+]
+
+active = true
+years = [2023, 2022]
+role = "Member and Speaker"
+
+[[members]]
+name = "Eyad Issa"
+nickname = "VaiTon"
+
+email = "eyadlorenzo.issa@studio.unibo.it"
+website = "https://github.com/vaiton"
+
+skills = ["Web exploitation", "System administration", "Forensics"]
+
+
+active = true
+years = [2023, 2022]
+role = "Member and Co-Lead"
+
+[[members]]
+nickname = "fuomag"
+
+email = "fuomag@gmail.com"
+website = "https://fuo.fi"
+
+skills = ["Web", "Reverse engineering", "OSINT"]
+
+role = "Member and Speaker"
+years = [2023, 2022, 2021]
+active = false
+
+
+[[members]]
+name = "Kabir"
+nickname = "amnesy"
+role = "Member"
+email = "amnesy@mintly.it"
+skills = ["Web", "Osint", "Network Analysis", "Insulting PHP"]
+active = false
+years = [2023]
+
+[[members]]
+name = "Karina Chichifoi"
+nickname = "trykatchup"
+role = "Member and Co-Lead"
+email = "karina.chichifoi@studio.unibo.it"
+website = "https://trykatchup.github.io/"
+years = [2023]
+active = false
+skills = ["OSINT", "System Administration", "Network Analysis"]
+
+[[members]]
+name = "Lorenzo Guerra"
+nickname = "wor"
+
+role = "Member"
+email = "guerralorenzo@proton.me"
+website = "https://lorenzo9uerra.github.io"
+
+skills = ["PWN", "Crypto", "System Administration"]
+years = [2023]
+
+active = false
+
+[[members]]
+name = "Giuseppe Mastrodomenico"
+nickname = "Mastr0"
+skills = ["Web exploitation"]
+active = true
+years = [2023]
+role = "Member"
+
+[[members]]
+name = "Patrick Papa"
+nickname = "pouup"
+photo = "unknown.png"
+role = "Member"
+email = "patrick.papa@studio.unibo.it"
+years = [2023]
+skills = ["Crypto", "PWN", "Crying without tears /s"]
+active = false
+
+[[members]]
+name = "Gianmaria Rovelli"
+nickname = "xgampx"
+role = "Member"
+website = "https://giammirove.github.io"
+skills = ["Web", "Reverse Engineering", "Low Level Programming"]
+years = [2023, 2022]
+active = false
+
+
+[[members]]
+nickname = "renny"
+active = true
+role = "Member, Ulisse Team @ CyberChallenge.IT 2024"
+years = [2023, 2024]
+
+[[members]]
+name = "Alan Davide Bovo"
+nickname = "Hecker404"
+skills = ["Web", "Pwn"]
+website = "https://albovo.github.io/"
+role = "Member, Ulisse Team @ CyberChallenge.IT 2024"
+active = true
+years = [2023, 2024]
+
+[[members]]
+nickname = "Lombax99"
+role = "Member and Co-Lead"
+active = true
+
+[[members]]
+nickname = "sugo"
+role = "Member and Co-Lead"
+active = true
