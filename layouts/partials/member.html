@@ -1,29 +1,36 @@
 <div>
     <h3>
         {{- if and .name .nickname -}}
-        <code>{{- .nickname -}}</code> ({{- .name -}})
+        <span>{{- .name -}}</span> ({{- .nickname -}})
         {{- else if .name -}}
         {{- .name -}}
         {{- else if .nickname -}}
-        <code>{{- .nickname -}}</code>
+        {{- .nickname -}}
         {{- end -}}
+
+        {{- if .email }} | <a href="mailto:{{ .email }}" title="{{ .nickname }}'s email address">📧</a> {{- end -}}
+        {{- if .website }} | <a href=" {{ .website }}" title="{{ .nickname }}'s website">🌐</a> {{- end }}
     </h3>
-    <p>
+    <div>
         {{ with .role}}
-        <strong>Role: </strong>
+        <strong>Roles: </strong>
         {{ . }}
         {{ end }}
 
-        {{- if .email }} | <a href="mailto:{{ .email }}" title="{{ .nickname }}'s email address">📧</a> {{- end -}}
 
-        {{- if .website }} | <a href=" {{ .website }}" title="{{ .nickname }}'s website">🌐</a> {{- end }}
 
         <br />
 
         {{ with .skills }}
-        <strong>Skills: </strong>
-        <span> {{ delimit . ", " }} </span>
+        <div style="margin-top: 10px">
+            <strong>Skills: </strong>
+            <ul>
+                {{ range . }}
+                <li style="margin-top: 0;"> {{ . }} </li>
+                {{ end }}
+            </ul>
+        </div>
         {{ end }}
 
-    </p>
+    </div>
 </div>

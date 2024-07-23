@@ -11,6 +11,7 @@ skills = [
 active = true
 years = [2023, 2022]
 role = "Member and Speaker"
+category = "speaker"
 
 [[members]]
 name = "Eyad Issa"
@@ -100,10 +101,15 @@ active = false
 
 
 [[members]]
-nickname = "renny"
+nickname = "Marspiter"
+name = "Renato Eugenio Maria Marziano"
 active = true
 role = "Member, Ulisse Team @ CyberChallenge.IT 2024"
+email = "renato@marziano.top"
+website = "https://marziano.top/"
 years = [2023, 2024]
+
+skills = ["Crypto", "Web", "Blockchain"]
 
 [[members]]
 name = "Alan Davide Bovo"

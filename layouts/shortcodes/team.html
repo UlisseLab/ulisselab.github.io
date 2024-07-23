@@ -3,29 +3,25 @@
 {{- $inactive := where $team "active" false -}}
 
 <div>
-    <h2>
-        Active members
-    </h2>
+    <h2 style="display: inline;"> Active members </h2>
 
-    <ul>
+    <div style="display: grid; grid-template-columns: 1fr 1fr;">
         {{ range $active }}
-        <li> {{ partial "member.html" . }} </li>
+        {{ partial "member.html" . }}
         {{ end }}
-    </ul>
+    </div>
 </div>
 
-<div style="margin-top: 2rem">
-    <details>
-        <summary>
-            <h2 style="display: inline; cursor: pointer; text-decoration: underline;">
-                Former members
-            </h2>
-        </summary>
 
-        <ul>
-            {{ range $inactive }}
-            <li> {{ partial "member.html" . }} </li>
-            {{ end }}
-        </ul>
-    </details>
-</div>
+<details style="margin-top: 2rem">
+    <summary>
+        <h2 style="display: inline; cursor: pointer; text-decoration: underline;">
+            Former members
+        </h2>
+    </summary>
+    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        {{ range $inactive }}
+        {{ partial "member.html" . }}
+        {{ end }}
+    </div>
+</details>
