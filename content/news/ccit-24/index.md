@@ -15,7 +15,6 @@ Il team, composto da Alan Davide Bovo, Giacomo Boschi, Davide Gianessi, Renato E
 
 Grazie al loro impegno e alle loro competenze, il team ha conquistato un eccellente **3° posto**, totalizzando 108.631 punti, posizionandosi dietro solo a PoliTo e Sapienza.
 
-
 ![Presentazione del team](team.jpeg)
 
 Complimenti a tutti i partecipanti e in particolare ai nostri studenti per il risultato ottenuto! Ci rivediamo l'anno prossimo per la prossima edizione di CyberChallenge.IT!
@@ -51,3 +50,8 @@ CyberChallenge.IT è un programma nazionale di formazione e competizione in cybe
 Se vuoi saperne di più su CyberChallenge.IT, visita il [sito ufficiale](https://cyberchallenge.it/) e la [pagina dedicata alle iscrizioni per la prossima edizione](https://cyberchallenge.it/students).
 
 Se vuoi entrare a far parte del nostro team, partecipare ai nostri eventi e alle nostre attività, contattaci su [Telegram](https://t.me/eyaddo) o [Discord](https://discord.gg/uwFbYA4H).
+
+## Coverage mediatica
+
+- [CesenaToday - Cybersecurity, una squadra con 4 ex diplomati del Pascal arriva terza classificata nella gara](https://www.cesenatoday.it/cronaca/cybersecurity-una-squadra-con-4-ex-diplomati-del-pascal-arriva-terza-classificata-nella-gara.html)
+- [Unibo Magazine - CyberChallenge.IT 2024: terzo posto per il team dell'Università di Bologna](https://magazine.unibo.it/archivio/2024/07/16/cyberchallenge-it-2024-terzo-posto-per-il-team-delluniversita-di-bologna)
