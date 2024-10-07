@@ -1,6 +1,6 @@
 +++
 title = "// 7 marzo 2024, Lab 2, Risorgimento //"
-date = "2023-02-24"
+date = "2024-02-24"
 tags = ["incontri"]
 +++
 
