@@ -44,11 +44,11 @@ ShowReadingTime = true
 ShowBreadCrumbs = true
 displayFullLangName = true # Language emojis
 socialIcons = [
-  { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
-  { name = "github", url = "https://github.com/UlisseLab" },
-  { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
-  { name = "dev", url = "https://dev.to/ulisse" },
-  { name = "mastodon", url = "https://kiwi.fuo.fi/@ulissecurity" },
+    { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
+    { name = "github", url = "https://github.com/UlisseLab" },
+    { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
+    { name = "dev", url = "https://dev.to/ulisse" },
+    { name = "mastodon", url = "https://kiwi.fuo.fi/@ulissecurity" },
 ]
 
 
@@ -63,18 +63,18 @@ enabled = true
 imageUrl = "logo.webp"
 imageTitle = "Ulisse Logo"
 buttons = [
-  { name = "📒 Writeups", url = "/writeups/" },
-  { name = "🧑‍💻 Team", url = "/team/" },
+    { name = "📒 Writeups", url = "/writeups/" },
+    { name = "🧑‍💻 Team", url = "/team/" },
 ]
 
 
 [menu]
 main = [
-  { weight = 1, name = "📰 News", url = "/news/" },
-  { weight = 2, name = "📒 Writeups", url = "/writeups/" },
-  { weight = 3, name = "🧑‍💻 Team", url = "/team/" },
-  { weight = 4, name = '🗄️ Archive', url = '/archives/' },
-  { weight = 5, name = "🖋️ Wiki", url = "https://ctf.ulis.se/wiki" },
+    { weight = 1, name = "📰 News", url = "/news/" },
+    { weight = 2, name = "📒 Writeups", url = "/writeups/" },
+    { weight = 3, name = "🧑‍💻 Team", url = "/team/" },
+    { weight = 4, name = '🗄️ Archive', url = '/archives/' },
+    { weight = 5, name = "🖋️ Wiki", url = "https://ctf.ulis.se/wiki" },
 ]
 
 [taxonomies]
@@ -87,3 +87,5 @@ tag = "tags"
 wrapStandAloneImageWithinParagraph = false
 [markup.goldmark.parser.attribute]
 block = true
+[markup.goldmark.renderer]
+unsafe = true
