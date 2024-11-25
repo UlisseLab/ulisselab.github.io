@@ -6,7 +6,7 @@ author = "Eyad"
 
 > ### Next Meeting
 >
-> The next meeting will be on Friday, 22th November 2024 at 15:00 in room 4.2 at the Risorgimento building.
+> The next meeting will be on Friday, 29th November 2024 at 15:00 in room 4.2 at the Risorgimento building.
 >
 > - [Calendar view](https://uniboaule.vercel.app/cal/5e9996a228a649001237296d/5dc56579b2285f0011f82130)
 
