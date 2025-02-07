@@ -28,6 +28,18 @@ years = [2023, 2022]
 role = "Member and Co-Lead"
 
 [[members]]
+name = "Pietro Bertozzi"
+
+email = "pietro.bertozzi3@studio.unibo.it"
+website = "https://github.com/BertozziPietro"
+
+skills = ["Cryptography"]
+
+active = true
+years = [2025, 2024]
+role = "Member"
+
+[[members]]
 nickname = "fuomag"
 
 email = "fuomag@gmail.com"
