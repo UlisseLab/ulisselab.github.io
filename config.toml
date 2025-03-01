@@ -1,6 +1,6 @@
 title = "Ulisse - CTF Team"
 baseurl = "https://ulisselab.github.io/"
-paginate = 6
+
 defaultContentLanguage = 'en'
 
 enableInlineShortcodes = true
@@ -14,6 +14,9 @@ pygmentsUseClasses = true
 googleAnalytics = ""
 
 theme = ["hugo-notice", "PaperMod"]
+
+[pagination]
+pagerSize = 6
 
 
 [languages.en]
