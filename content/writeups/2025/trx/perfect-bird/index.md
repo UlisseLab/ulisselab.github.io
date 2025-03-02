@@ -17,18 +17,19 @@ As a _bird_ soaring through the sky, you seek the _perfect language_, and then..
 
 ## Writeup
 
-Opening the `chall.db3` file, we find a strange javascript-like programming language.
-The code has some strange symbols and conventions, and without a guide, it's hard to understand what it does.
+Opening the `chall.db3` file, I come across a weird programming language that looks kind of like JavaScript. The code is full of strange symbols and conventions, and without a guide, it’s pretty hard to figure out what it does.
 
-The first thing I try to always do is to look at the challenge description for hints. In this case, we have the words "bird" and "perfect language" in italic.
-I try to search the web for "bird perfect language programming".
-As the first result, I get the streamer ThePrimeTime, who has [a video on this "programming language"](https://www.youtube.com/watch?v=tDexugp8EmM).
+My go-to move is always to check the challenge description for hints. Here, the words _bird_ and _perfect language_ are italicized, which seems important. So, I search for "bird perfect language programming" online.
+
+The first result is [a video by the streamer ThePrimeTime][video], where he talks about this exact programming language.
+
+[video]: https://www.youtube.com/watch?v=tDexugp8EmM
 
 ![A Google search for "bird perfect language programming"](search.png)
 
-From the description of the video, I get back to the GitHub repository describing this language: <https://github.com/TodePond/GulfOfMexico>
+From the video's description, I find my way back to the GitHub repository that explains this language: <https://github.com/TodePond/GulfOfMexico>.
 
-Apparently the language was called "DreamBerd", but now it seems to be called "GulfOfMexico".
+It looks like it was originally called "DreamBerd," but now it goes by "GulfOfMexico."
 
 ## DreamBerd - A Perfect Language
 
@@ -38,14 +39,16 @@ Apparently the language was called "DreamBerd", but now it seems to be called "G
 > print("Hello world")!
 > ```
 
-I think about ways to decypher the code, and I come up with the idea of writing
-a script to convert the code to a more readable form. I first think about
-converting it to Python, but then I change my mind and decide to convert it to
-JavaScript, as it's more similar to the original language.
+I start thinking about ways to decipher the code and come up with the idea of writing a script to rewrite it into an existing language (one with an existing interpreter!).
 
-I write a Python script to convert the code to JavaScript, and then I run it to get the output.
+At first, I consider converting it to Python, but then I realize JavaScript would be a better choice since it’s closer to the original language.
+
+So, I write a Python script to convert the code to JavaScript and run it to see the output.
 
 ### Converting DreamBerd to JavaScript
+
+The key here is that we don’t need a _perfect_ (pun intended) conversion—just something accurate enough to run the challenge code.
+It doesn’t have to handle every possible DreamBerd program, just this one.
 
 The first thing we need to do is to fix the lifetimes in the code.
 
@@ -108,9 +111,6 @@ program = "".join(program)
 ```
 
 Then we need to replace each "strange lang" construct with the corresponding JavaScript construct.
-
-The thing to keep in mind here is that we don't need to be _perfect_ (pun intended) in the conversion. We just need to
-be accurate enough to run the challenge code (as opposed to EVERY DreamBerd code).
 
 - `!` -> nothing
 
@@ -207,7 +207,8 @@ $ node chall_ok.js
 
 ```
 
-Apparently, the code is an array of integers. We can convert it to ASCII to get the flag.
+The result we get is an array of integers.
+We can convert it to ASCII to get the flag.
 
 ```python
 #!/bin/env python3
@@ -223,98 +224,9 @@ for i in range(0, len(m)):
     print(chr(m[i]), end="")
 ```
 
-And we get the flag.
-
 ```shell
 $ python3 decode.py
 TRX{tHi5_I5_th3_P3rf3ct_l4nGU4g3!!!!!!}
 ```
 
-## Full script
-
-<details>
-
-```python
-#!/bin/env python3
-import sys
-import re
-
-
-lines = sys.stdin.readlines()
-
-
-def fix_lifetimes(lines):
-    new_lines = []
-
-    for i, line in enumerate(lines):
-        match = re.match(r".+<(.+)>.+", line)
-        if not match:
-            new_lines.append(line)
-            continue
-
-        lifetime = match.group(1)
-
-        if lifetime == "Infinity":
-            new_lines.append(line)
-            continue
-
-        lifetime = int(lifetime)
-
-        if lifetime >= 0:
-            line = line.replace(f"<{lifetime}>", "")
-            new_lines.append(line)
-            continue
-
-        new_pos = max(len(new_lines) + lifetime, 0)
-
-        # remove the invalid lifetime
-        line = line.replace(f"<{lifetime}>", "")
-        new_lines.insert(new_pos, line)
-
-        print(f"Moved line {i + 1} -> {new_pos + 1}", file=sys.stderr)
-
-    return new_lines
-
-
-program = fix_lifetimes(lines)
-program = "".join(program)
-
-
-
-program = re.sub(r"!+", "", program)
-for i in range(1, 100):
-    program = re.sub(r";([\w|!|(|)]+)", r"!(\1)", program)
-
-program = program.replace("const const const", "let")
-program = program.replace("const const", "let")
-program = program.replace("const var", "let")
-program = program.replace("var var", "let")
-
-program = re.sub(r"let (\d+)", r"let var_\1", program)
-
-
-program = program.replace("42 +=", "var_42 +=")
-program = program.replace("42 -=", "var_42 -=")
-program = program.replace("42 *=", "var_42 *=")
-program = program.replace("42 ^ ", "var_42 ^ ")
-program = program.replace("42 = ", "var_42 = ")
-program = program.replace("42 * ", "var_42 * ")
-program = program.replace("42 / ", "var_42 / ")
-program = program.replace("42 % ", "var_42 % ")
-program = program.replace("42 + ", "var_42 + ")
-program = program.replace("42 - ", "var_42 - ")
-program = program.replace("!42", "!var_42")
-
-
-program = re.sub("<Infinity>", "", program)
-program = re.sub(r"functi (.+?) \(\) =>", r"function \1()", program)
-program = re.sub(r"print", "console.log", program)
-
-# array starts at -1 ...
-program = re.sub(r"(\w+)\[(.+)\]", r"\1[\2 + 1]", program)
-
-
-print(program)
-```
-
-</details>
+Full script: [perfect_bird.py](perfect_bird.py)
