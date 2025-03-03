@@ -47,8 +47,7 @@ socialIcons = [
     { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
     { name = "github", url = "https://github.com/UlisseLab" },
     { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
-    { name = "dev", url = "https://dev.to/ulisse" },
-    { name = "mastodon", url = "https://kiwi.fuo.fi/@ulissecurity" },
+    { name = "dev", url = "https://dev.to/ulisse" }
 ]
 
 
