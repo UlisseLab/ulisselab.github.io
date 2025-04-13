@@ -30,12 +30,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.145.0
+      HUGO_CACHE_DIR: /tmp/hugo_cache
+      HUGO_ENVIRONMENT: production
     steps:
-      - name: Install Hugo CLI
-        run: sudo snap install hugo --channel=extended
-
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
 
       - name: Install Node.js
         uses: actions/setup-node@v3
@@ -47,6 +49,14 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Setup hugo cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.HUGO_CACHEDIR }}
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/config.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -56,8 +66,8 @@ jobs:
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENVIRONMENT: production
+          HUGO_CACHEDIR: ${{ env.HUGO_CACHE_DIR }}
+          HUGO_ENVIRONMENT: ${{ env.HUGO_ENVIRONMENT }}
         run: |
           hugo \
             --minify \
