@@ -1,36 +1,57 @@
-<div>
-    <h3>
+<div
+    class="twp tw:max-w-xl tw:px-6 tw:pb-2 tw:rounded-2xl tw:border tw:shadow-lg tw:transition-all tw:hover:scale-105"
+>
+    <h3 class="tw:mb-3 tw:text-2xl tw:font-semibold">
         {{- if and .name .nickname -}}
-        <span>{{- .name -}}</span> ({{- .nickname -}})
+        <span>{{- .name -}}</span>
+        <span class="tw:font-normal">({{- .nickname -}})</span>
         {{- else if .name -}}
-        {{- .name -}}
+        <span>{{- .name -}}</span>
         {{- else if .nickname -}}
-        {{- .nickname -}}
+        <span>{{- .nickname -}}</span>
         {{- end -}}
-
-        {{- if .email }} | <a href="mailto:{{ .email }}" title="{{ .nickname }}'s email address">📧</a> {{- end -}}
-        {{- if .website }} | <a href=" {{ .website }}" title="{{ .nickname }}'s website">🌐</a> {{- end }}
     </h3>
-    <div>
-        {{ with .role}}
-        <strong>Roles: </strong>
-        {{ . }}
-        {{ end }}
 
-
-
-        <br />
-
-        {{ with .skills }}
-        <div style="margin-top: 10px">
-            <strong>Skills: </strong>
-            <ul>
-                {{ range . }}
-                <li style="margin-top: 0;"> {{ . }} </li>
-                {{ end }}
-            </ul>
-        </div>
-        {{ end }}
-
+    <div class="tw:flex tw:flex-wrap tw:gap-2 tw:mt-3 tw:text-sm">
+        {{- if .email }}
+        <a
+            href="mailto:{{ .email }}"
+            class="tw:badge tw:badge-primary tw:!text-primary-content tw:!shadow-none tw:px-2"
+            title="{{ .nickname }}'s email address"
+        >
+            📧 <span>Email</span>
+        </a>
+        {{- end }} {{- if .website }}
+        <a
+            href="{{ .website }}"
+            class="tw:badge tw:badge-primary tw:!text-primary-content tw:!shadow-none tw:px-2"
+            title="{{ .nickname }}'s website"
+        >
+            🌐 <span>Website</span>
+        </a>
+        {{- end }}
     </div>
+
+    {{ with .roles }}
+    <div class="tw:mt-4 tw:text-md">
+        <strong class="tw:text-secondary"> Roles: </strong>
+
+        <ul class="tw:list-disc tw:list-inside tw:mt-2 tw:text-sm">
+            {{ range . }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+    <!-- -->
+    {{ with .skills }}
+    <div class="tw:mt-4">
+        <strong class="tw:text-secondary">Skills:</strong>
+        <ul class="tw:list-disc tw:list-inside tw:mt-2 tw:text-sm">
+            {{ range . }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
 </div>

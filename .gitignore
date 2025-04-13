@@ -2,3 +2,5 @@ public/
 resources/
 .hugo_build.lock
 .zed/
+hugo_stats.json
+/node_modules/

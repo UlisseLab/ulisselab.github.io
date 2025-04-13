@@ -1,27 +1,23 @@
-{{- $team := collections.Sort .Site.Data.team.members "nickname" -}}
-{{- $active := where $team "active" true -}}
-{{- $inactive := where $team "active" false -}}
+{{- $team := .Site.Data.team.members -}} {{- $active := where $team "active"
+true -}} {{- $inactive := where $team "active" false -}}
 
 <div>
-    <h2 style="display: inline;"> Active members </h2>
+    <div>
+        <h2>Active members</h2>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr;">
-        {{ range $active }}
-        {{ partial "member.html" . }}
-        {{ end }}
+        <div class="tw:grid tw:grid-cols-3 tw:gap-4">
+            {{ range $active }} {{ partial "member.html" . }} {{ end }}
+        </div>
     </div>
+
+    <details style="margin-top: 2rem">
+        <summary style="margin-bottom: 1rem">
+            <h2 class="tw:inline tw:cursor-pointer tw:underline">
+                Former members
+            </h2>
+        </summary>
+        <div class="tw:grid tw:grid-cols-2 tw:gap-4">
+            {{ range $inactive }} {{ partial "member.html" . }} {{ end }}
+        </div>
+    </details>
 </div>
-
-
-<details style="margin-top: 2rem">
-    <summary>
-        <h2 style="display: inline; cursor: pointer; text-decoration: underline;">
-            Former members
-        </h2>
-    </summary>
-    <div style="display: grid; grid-template-columns: 1fr 1fr;">
-        {{ range $inactive }}
-        {{ partial "member.html" . }}
-        {{ end }}
-    </div>
-</details>

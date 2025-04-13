@@ -1,0 +1,15 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme) prefix(tw);
+/* @import "tailwindcss/preflight.css" layer(base); */
+@import "tailwindcss/utilities.css" layer(utilities) prefix(tw);
+
+@source "hugo_stats.json";
+@plugin "daisyui";
+
+body {
+    font-family: "Merriweather Sans", serif;
+}
+
+:root {
+    --main-width: 1024px;
+}

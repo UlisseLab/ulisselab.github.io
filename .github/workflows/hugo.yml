@@ -29,13 +29,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.137.0
+      HUGO_VERSION: 0.145.0
     steps:
       - name: Install Hugo CLI
         run: sudo snap install hugo --channel=extended
 
       - name: Install Dart Sass
         run: sudo snap install dart-sass
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+
+      - name: Install dependencies
+        run: npm install --no-audit --prefer-offline
 
       - name: Setup Pages
         id: pages

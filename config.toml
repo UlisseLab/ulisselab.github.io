@@ -11,6 +11,7 @@ buildExpired = false
 enableEmoji = true
 pygmentsUseClasses = true
 
+
 googleAnalytics = ""
 
 theme = ["hugo-notice", "PaperMod"]
@@ -47,7 +48,7 @@ socialIcons = [
     { name = "twitter", url = "https://twitter.com/ulissecuritygroup" },
     { name = "github", url = "https://github.com/UlisseLab" },
     { name = "gitlab", url = "https://gitlab.com/ULISSecurityGroup/" },
-    { name = "dev", url = "https://dev.to/ulisse" }
+    { name = "dev", url = "https://dev.to/ulisse" },
 ]
 
 
@@ -88,3 +89,25 @@ wrapStandAloneImageWithinParagraph = false
 block = true
 [markup.goldmark.renderer]
 unsafe = true
+
+[build]
+[build.buildStats]
+enable = true
+
+[[build.cachebusters]]
+source = 'assets/notwatching/hugo_stats\.json'
+target = 'css'
+
+[[build.cachebusters]]
+source = '(postcss|tailwind)\.config\.js'
+target = 'css'
+
+[module]
+[[module.mounts]]
+source = 'assets'
+target = 'assets'
+
+[[module.mounts]]
+disableWatch = true
+source = 'hugo_stats.json'
+target = 'assets/notwatching/hugo_stats.json'
