@@ -5,7 +5,7 @@ true -}} {{- $inactive := where $team "active" false -}}
     <div>
         <h2>Active members</h2>
 
-        <div class="tw:grid tw:grid-cols-3 tw:gap-4">
+        <div class="tw:grid tw:md:grid-cols-2 tw:lg:grid-cols-3 tw:gap-4">
             {{ range $active }} {{ partial "member.html" . }} {{ end }}
         </div>
     </div>
