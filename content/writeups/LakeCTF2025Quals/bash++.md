@@ -128,7 +128,7 @@ class Variable {
             long l;
             char* s;
         } value;
-        
+
         Variable(long l) : type(LONG) {
             value.l = l;
         }
@@ -248,14 +248,14 @@ Lets read some docs:
 ```
 function strdup
 
-provided by <string.h>  
+provided by <string.h>
 ──────────────────────────────────────────────────────
 → char *
-Parameters:  
+Parameters:
 
   * const char * __s
 
-Duplicate S, returning an identical malloc'd string. 
+Duplicate S, returning an identical malloc'd string.
 ```
 
 Once again, we are dealing with an object on the heap. This means our object will be adjectent in memory to the `Variable(s)` and most importantly, even with ASLR enabled itll be a contant offset from them.
@@ -495,7 +495,6 @@ if __name__ == "__main__":
 ```
 
 Note : due to ASLR this may fail sometimes if any addresses contains a newline.
-
 
 ## Flag
 
