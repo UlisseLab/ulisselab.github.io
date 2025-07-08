@@ -1,6 +1,8 @@
 +++
-title = "Perfect Bird"
+title  = "Perfect Bird"
 author = "VaiTon"
+date   = "2025-02-22"
+tags   = ["GulfOfMexico", "DreamBerd", "language"]
 
 [cover]
 image = "cover.jpg"
