@@ -38,7 +38,12 @@ text_color = ""
 author = "Ulisse"
 favicon = ""
 site_logo = "logo_640x640.avif"
-description = "Ulisse Laboratory CTF Team Website and Blog"
+description = """\
+Ulisse CTF is a Capture The Flag (CTF) team based in Bologna, Italy. \
+We participate in CTF competitions, focusing on cybersecurity challenges and knowledge sharing. \
+We are part of the Ulisse Security Group, the University of Bologna's cybersecurity research group. \
+"""
+
 background_color_class = "bg-black"
 recent_posts_number = 3
 ShowReadingTime = true
