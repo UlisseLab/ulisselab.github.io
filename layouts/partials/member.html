@@ -2,25 +2,27 @@
     class="twp tw:max-w-xl tw:px-6 tw:pb-2 tw:rounded-2xl tw:border tw:shadow-lg tw:transition-all tw:hover:scale-102"
 >
     <div class="tw:flex tw:justify-center tw:mt-4">
-        {{- $memberImage := "" -}}
+        {{- $processedImage := "" -}}
+        {{- $imageResource := "" -}}
+
         {{- if .image -}}
             {{- $imagePath := printf "people/%s" .image -}}
-            {{- with resources.Get $imagePath -}}
-                {{- $memberImage = .RelPermalink -}}
-            {{- end -}}
+            {{- $imageResource = resources.Get $imagePath -}}
         {{- end -}}
 
-        {{- if not $memberImage -}}
-            {{- with resources.Get "people/unknown.jpg" -}}
-                {{- $memberImage = .RelPermalink -}}
-            {{- end -}}
+        {{- if not $imageResource -}}
+            {{- $imageResource = resources.Get "people/unknown.jpg" -}}
         {{- end -}}
 
-        {{- if $memberImage -}}
+        {{- if $imageResource -}}
+            {{- $processedImage = $imageResource.Process "webp" | resources.Fingerprint -}}
+        {{- end -}}
+
+        {{- if $processedImage -}}
         <img
-            src="{{ $memberImage }}"
+            src="{{ $processedImage.RelPermalink }}"
             alt="{{ if .name }}{{ .name }}{{ else }}{{ if .nickname }}{{ .nickname }}{{ else }}Unknown{{ end }}{{ end }}"
-            class="tw:w-52 tw:h-52 tw:!rounded-2xl tw:object-cover tw:border-2"
+            class="tw:w-52 tw:h-52 tw:rounded-full tw:object-cover tw:border-2 tw:shadow"
         />
         {{- end -}}
     </div>
