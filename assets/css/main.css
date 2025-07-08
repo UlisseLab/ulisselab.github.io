@@ -4,7 +4,16 @@
 @import "tailwindcss/utilities.css" layer(utilities) prefix(tw);
 
 @source "hugo_stats.json";
-@plugin "daisyui";
+@plugin "daisyui" {
+    themes: dark --default;
+}
+
+@plugin "daisyui/theme" {
+    name: "dark";
+    default: true;
+
+    --color-secondary: #4f46e5;
+}
 
 body {
     font-family: "Merriweather Sans", serif;

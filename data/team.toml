@@ -7,6 +7,7 @@ skills = ["Web", "Infra", "Forensics"]
 active = true
 years = [2023, 2022]
 roles = ["Team Lead"]
+image = "eyad_issa.jpg"
 
 [[members]]
 name = "Luca Lombardi"
@@ -14,6 +15,7 @@ nickname = "Lombax99"
 roles = ["Co-Lead"]
 active = true
 website = "https://github.com/Lombax99"
+image = "luca_lombardi.jpg"
 
 
 [[members]]
@@ -24,10 +26,12 @@ website = "https://albovo.github.io/"
 roles = ["Member", "CyberChallenge.IT 2024"]
 active = true
 years = [2023, 2024]
+image = "alan_bovo.jpg"
 
 [[members]]
 nickname = "Marspiter"
 name = "Renato Eugenio Maria Marziano"
+image = "renato_marziano.webp"
 active = true
 roles = ["Member", "CyberChallenge.IT 2024"]
 email = "renato@marziano.top"
@@ -47,12 +51,14 @@ website = "https://github.com/Crihexe"
 [[members]]
 name = "Davide Gianessi"
 nickname = "gianetz"
+image = "davide_gianessi.jpg"
 skills = ["Crypto"]
 roles = ["Member", "CyberChallenge.IT 2024"]
 active = true
 
 [[members]]
 name = "Pietro Bertozzi"
+image = "pietro_bertozzi.jpg"
 email = "pietro.bertozzi3@studio.unibo.it"
 website = "https://github.com/BertozziPietro"
 skills = ["Crypto"]
@@ -62,6 +68,7 @@ roles = ["Member"]
 
 [[members]]
 name = "Giacomo Boschi"
+image = "giacomo_boschi.jpg"
 nickname = "Giak78"
 skills = ["Rev", "Pwn"]
 roles = ["Member", "CyberChallenge.IT 2024"]
@@ -69,12 +76,14 @@ active = true
 
 [[members]]
 name = "Elia Soldati"
+image = "elia_soldati.jpg"
 roles = ["Member", "CyberChallenge.IT 2024"]
 skills = ["Network", "Infra"]
 active = true
 
 [[members]]
 name = "Karina Chichifoi"
+image = "karina_chichifoi.jpg"
 nickname = "trykatchup"
 roles = ["Member"]
 email = "karina.chichifoi@studio.unibo.it"
@@ -85,6 +94,7 @@ skills = ["OSINT", "Network", "Adversarial AI", "Web"]
 
 [[members]]
 name = "Filippo Nardon"
+image = "filippo_nardon.jpg"
 nickname = "ufilme"
 active = true
 roles = ["Member"]
@@ -93,6 +103,7 @@ website = "https://github.com/ufilme"
 
 [[members]]
 name = "Simone Mazzacano"
+image = "simone_mazzacano.jpg"
 roles = ["Member", "CyberChallenge.IT 2024"]
 skills = ["Pwn"]
 active = true

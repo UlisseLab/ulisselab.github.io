@@ -1,57 +1,87 @@
 <div
-    class="twp tw:max-w-xl tw:px-6 tw:pb-2 tw:rounded-2xl tw:border tw:shadow-lg tw:transition-all tw:hover:scale-105"
+    class="twp tw:max-w-xl tw:px-6 tw:pb-2 tw:rounded-2xl tw:border tw:shadow-lg tw:transition-all tw:hover:scale-102"
 >
-    <h3 class="tw:mb-3 tw:text-2xl tw:font-semibold">
-        {{- if and .name .nickname -}}
-        <span>{{- .name -}}</span>
-        <span class="tw:font-normal">({{- .nickname -}})</span>
-        {{- else if .name -}}
+    <div class="tw:flex tw:justify-center tw:mt-4">
+        {{- $memberImage := "" -}}
+        {{- if .image -}}
+            {{- $imagePath := printf "people/%s" .image -}}
+            {{- with resources.Get $imagePath -}}
+                {{- $memberImage = .RelPermalink -}}
+            {{- end -}}
+        {{- end -}}
+
+        {{- if not $memberImage -}}
+            {{- with resources.Get "people/unknown.jpg" -}}
+                {{- $memberImage = .RelPermalink -}}
+            {{- end -}}
+        {{- end -}}
+
+        {{- if $memberImage -}}
+        <img
+            src="{{ $memberImage }}"
+            alt="{{ if .name }}{{ .name }}{{ else }}{{ if .nickname }}{{ .nickname }}{{ else }}Unknown{{ end }}{{ end }}"
+            class="tw:w-52 tw:h-52 tw:!rounded-2xl tw:object-cover tw:border-2"
+        />
+        {{- end -}}
+    </div>
+
+    <h3 class="tw:mb-2 tw:text-2xl tw:font-semibold">
+        {{- if .name -}}
         <span>{{- .name -}}</span>
         {{- else if .nickname -}}
         <span>{{- .nickname -}}</span>
         {{- end -}}
+
+        {{- if and .name .nickname -}}
+        <span class="tw:ms-2 tw:badge tw:badge-border tw:!text-secondary-content tw:!shadow-none tw:px-2 tw:font-mono">
+            aka "{{ .nickname }}"
+        </span>
+        {{- end -}}
     </h3>
 
     <div class="tw:flex tw:flex-wrap tw:gap-2 tw:mt-3 tw:text-sm">
+
+
         {{- if .email }}
         <a
             href="mailto:{{ .email }}"
             class="tw:badge tw:badge-primary tw:!text-primary-content tw:!shadow-none tw:px-2"
-            title="{{ .nickname }}'s email address"
+            title="{{ if .nickname }}{{ .nickname }}{{ else }}{{ if .name }}{{ .name }}{{ else }}Unknown{{ end }}{{ end }}'s email address"
         >
             📧 <span>Email</span>
         </a>
-        {{- end }} {{- if .website }}
+        {{- end -}}
+
+        {{- if .website }}
         <a
             href="{{ .website }}"
             class="tw:badge tw:badge-primary tw:!text-primary-content tw:!shadow-none tw:px-2"
-            title="{{ .nickname }}'s website"
+            title="{{ if .nickname }}{{ .nickname }}{{ else }}{{ if .name }}{{ .name }}{{ else }}Unknown{{ end }}{{ end }}'s website"
         >
             🌐 <span>Website</span>
         </a>
-        {{- end }}
+        {{- end -}}
     </div>
 
-    {{ with .roles }}
+    {{- with .roles }}
     <div class="tw:mt-4 tw:text-md">
-        <strong class="tw:text-secondary"> Roles: </strong>
-
+        <strong class="tw:text-secondary">Roles:</strong>
         <ul class="tw:list-disc tw:list-inside tw:mt-2 tw:text-sm">
-            {{ range . }}
+            {{- range . }}
             <li>{{ . }}</li>
-            {{ end }}
+            {{- end }}
         </ul>
     </div>
-    {{ end }}
-    <!-- -->
-    {{ with .skills }}
+    {{- end -}}
+
+    {{- with .skills }}
     <div class="tw:mt-4">
         <strong class="tw:text-secondary">Skills:</strong>
         <ul class="tw:list-disc tw:list-inside tw:mt-2 tw:text-sm">
-            {{ range . }}
+            {{- range . }}
             <li>{{ . }}</li>
-            {{ end }}
+            {{- end }}
         </ul>
     </div>
-    {{ end }}
+    {{- end -}}
 </div>
