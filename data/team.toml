@@ -5,15 +5,36 @@ email = "eyadlorenzo.issa@studio.unibo.it"
 website = "https://github.com/vaiton"
 skills = ["Web", "Infra", "Forensics"]
 active = true
-years = [2023, 2022]
-roles = ["Team Lead"]
+years = [2022, 2023, 2024, 2025]
+roles = ["Team Lead", "CyberChallenge.IT 2021"]
 image = "eyad_issa.jpg"
+
+[[members]]
+nickname = "Marspiter"
+name = "Renato Eugenio Maria Marziano"
+image = "renato_marziano.webp"
+active = true
+roles = ["Member", "CyberChallenge.IT 2024"]
+email = "renato@marziano.top"
+website = "https://marziano.top/"
+years = [2024, 2025]
+skills = ["Crypto", "Web", "Blockchain"]
+
+[[members]]
+name = "Federico Bosi"
+nickname = "rhxto"
+active = true
+years = [2025]
+roles = ["Member", "CyberChallenge.IT 2025"]
+skills = ["Web", "Infra"]
+image = "federico_bosi.png"
 
 [[members]]
 name = "Luca Lombardi"
 nickname = "Lombax99"
-roles = ["Co-Lead"]
+roles = ["Member", "CyberChallenge.IT 2021"]
 active = true
+years = [2023, 2024, 2025]
 website = "https://github.com/Lombax99"
 image = "luca_lombardi.jpg"
 
@@ -24,36 +45,11 @@ skills = ["Web", "Pwn"]
 website = "https://albovo.github.io/"
 roles = ["Member", "CyberChallenge.IT 2024"]
 active = true
-years = [2023, 2024]
+years = [2024, 2025]
 image = "alan_bovo.jpg"
 
 [[members]]
-nickname = "Marspiter"
-name = "Renato Eugenio Maria Marziano"
-image = "renato_marziano.webp"
-active = true
-roles = ["Member", "CyberChallenge.IT 2024"]
-email = "renato@marziano.top"
-website = "https://marziano.top/"
-years = [2023, 2024]
-skills = ["Crypto", "Web", "Blockchain"]
-
-[[members]]
-name = "Cristian Di Nicola"
-nickname = "Crihexe"
-active = true
-roles = ["Member"]
-skills = ["Pwn", "Rev"]
-website = "https://github.com/Crihexe"
-
-
-[[members]]
-name = "Davide Gianessi"
-nickname = "gianetz"
-image = "davide_gianessi.jpg"
-skills = ["Crypto"]
-roles = ["Member", "CyberChallenge.IT 2024"]
-active = true
+name = "Giuseppe"
 
 [[members]]
 name = "Pietro Bertozzi"
@@ -62,8 +58,27 @@ email = "b3rtozzipietro@gmail.com"
 website = "https://github.com/pietro-bertozzi"
 skills = ["Crypto"]
 active = true
-years = [2025, 2024]
+years = [2024, 2025]
 roles = ["Member"]
+
+[[members]]
+name = "Cristian Di Nicola"
+nickname = "Crihexe"
+image = "cristian_dinicola.jpg"
+active = true
+years = [2025]
+roles = ["Member"]
+skills = ["Pwn", "Rev"]
+website = "https://github.com/Crihexe"
+
+[[members]]
+name = "Davide Gianessi"
+nickname = "gianetz"
+image = "davide_gianessi.jpg"
+skills = ["Crypto"]
+roles = ["Member", "CyberChallenge.IT 2024"]
+years = [2024, 2025]
+active = true
 
 [[members]]
 name = "Giacomo Boschi"
@@ -71,25 +86,27 @@ image = "giacomo_boschi.jpg"
 nickname = "Giak78"
 skills = ["Rev", "Pwn"]
 roles = ["Member", "CyberChallenge.IT 2024"]
-active = true
-
-[[members]]
-name = "Elia Soldati"
-image = "elia_soldati.jpg"
-roles = ["Member", "CyberChallenge.IT 2024"]
-skills = ["Network", "Infra"]
+years = [2024, 2025]
 active = true
 
 [[members]]
 name = "Karina Chichifoi"
 image = "karina_chichifoi.jpg"
 nickname = "trykatchup"
-roles = ["Member"]
+roles = ["Member", "CyberChallenge.IT 2021"]
 email = "karina.chichifoi@studio.unibo.it"
 website = "https://trykatchup.github.io/"
-years = [2023]
 active = true
+years = [2022, 2023, 2024, 2025]
 skills = ["OSINT", "Network", "Adversarial AI", "Web"]
+
+[[members]]
+name = "Simone Mazzacano"
+image = "simone_mazzacano.jpg"
+roles = ["Member", "CyberChallenge.IT 2024"]
+skills = ["Pwn"]
+years = [2023, 2024, 2025]
+active = true
 
 [[members]]
 name = "Filippo Nardon"
@@ -98,36 +115,37 @@ nickname = "ufilme"
 active = true
 roles = ["Member"]
 skills = ["Web", "Infra"]
+years = [2023, 2024, 2025]
 website = "https://github.com/ufilme"
 
 [[members]]
-name = "Simone Mazzacano"
-image = "simone_mazzacano.jpg"
+name = "Elia Soldati"
+image = "elia_soldati.jpg"
 roles = ["Member", "CyberChallenge.IT 2024"]
-skills = ["Pwn"]
+skills = ["Network", "Infra"]
+years = [2024, 2025]
 active = true
 
+## -------------- ##
+## Former members ##
+## -------------- ##
 
 [[members]]
 nickname = "sugo"
 roles = ["Member"]
-active = true
+active = false
 
-
-# Former members
 [[members]]
 nickname = "donnoh"
 website = "https://lucadonnoh.github.io/"
 skills = [
-    "Blockchain Security",
-    "Theoretical Computer Science",
-    "Zero-Knowledge Proofs",
+  "Blockchain Security",
+  "Theoretical Computer Science",
+  "Zero-Knowledge Proofs",
 ]
 active = false
-years = [2023, 2022]
 roles = ["Member and Speaker"]
 category = "speaker"
-
 
 [[members]]
 nickname = "fuomag"
@@ -138,7 +156,6 @@ roles = ["Member and Speaker"]
 years = [2023, 2022, 2021]
 active = false
 
-
 [[members]]
 name = "Kabir"
 nickname = "amnesy"
@@ -147,7 +164,6 @@ email = "amnesy@mintly.it"
 skills = ["Web", "Osint", "Network Analysis", "Insulting PHP"]
 active = false
 years = [2023]
-
 
 [[members]]
 name = "Lorenzo Guerra"
