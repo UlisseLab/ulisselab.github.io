@@ -17,7 +17,6 @@ active = true
 website = "https://github.com/Lombax99"
 image = "luca_lombardi.jpg"
 
-
 [[members]]
 name = "Alan Davide Bovo"
 nickname = "Hecker404"
@@ -59,8 +58,8 @@ active = true
 [[members]]
 name = "Pietro Bertozzi"
 image = "pietro_bertozzi.jpg"
-email = "pietro.bertozzi3@studio.unibo.it"
-website = "https://github.com/BertozziPietro"
+email = "b3rtozzipietro@gmail.com"
+website = "https://github.com/pietro-bertozzi"
 skills = ["Crypto"]
 active = true
 years = [2025, 2024]
