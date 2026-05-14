@@ -24,14 +24,17 @@ defaults:
   run:
     shell: bash
 
+env:
+  HUGO_ENVIRONMENT: production
+  HUGO_CACHEDIR: /tmp/hugo_cache
+  HUGO_VERSION: 0.161.1
+
+  NODE_VERSION: "24"
+
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.161.1
-      HUGO_CACHEDIR: /tmp/hugo_cache
-      HUGO_ENVIRONMENT: production
     steps:
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v3
@@ -41,6 +44,8 @@ jobs:
 
       - name: Install Node.js
         uses: actions/setup-node@v5
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Setup Pages
         id: pages
