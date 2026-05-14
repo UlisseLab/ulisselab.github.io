@@ -21,7 +21,7 @@ pagerSize = 6
 
 
 [languages.en]
-languageName = ':us:'
+label = ':us:'
 weight = 2
 
 [languages.en.params]
