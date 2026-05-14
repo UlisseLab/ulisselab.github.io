@@ -3,22 +3,11 @@ name = "Eyad Issa"
 nickname = "VaiTon"
 email = "eyadlorenzo.issa@studio.unibo.it"
 website = "https://github.com/vaiton"
-skills = ["Web", "Infra", "Forensics"]
+skills = ["Web", "Rev", "Network", "Infra"]
 active = true
 years = [2022, 2023, 2024, 2025]
-roles = ["Team Lead", "CyberChallenge.IT 2021"]
+roles = ["Team Lead", "CyberChallenge.IT 2021", "Active member & Organizer"]
 image = "eyad_issa.jpg"
-
-[[members]]
-nickname = "Marspiter"
-name = "Renato Eugenio Maria Marziano"
-image = "renato_marziano.webp"
-active = true
-roles = ["Member", "CyberChallenge.IT 2024"]
-email = "renato@marziano.top"
-website = "https://marziano.top/"
-years = [2024, 2025]
-skills = ["Crypto", "Web", "Blockchain"]
 
 [[members]]
 name = "Federico Bosi"
@@ -28,15 +17,6 @@ years = [2025]
 roles = ["Member", "CyberChallenge.IT 2025"]
 skills = ["Web", "Infra"]
 image = "federico_bosi.png"
-
-[[members]]
-name = "Luca Lombardi"
-nickname = "Lombax99"
-roles = ["Member", "CyberChallenge.IT 2021"]
-active = true
-years = [2023, 2024, 2025]
-website = "https://github.com/Lombax99"
-image = "luca_lombardi.jpg"
 
 [[members]]
 name = "Alan Davide Bovo"
@@ -49,17 +29,15 @@ years = [2024, 2025]
 image = "alan_bovo.jpg"
 
 [[members]]
-name = "Giuseppe"
-
-[[members]]
-name = "Pietro Bertozzi"
-image = "pietro_bertozzi.jpg"
-email = "b3rtozzipietro@gmail.com"
-website = "https://github.com/pietro-bertozzi"
-skills = ["Crypto"]
+nickname = "Marspiter"
+name = "Renato Eugenio Maria Marziano"
+image = "renato_marziano.webp"
 active = true
+roles = ["Member", "CyberChallenge.IT 2024"]
+email = "renato@marziano.top"
+website = "https://marziano.top/"
 years = [2024, 2025]
-roles = ["Member"]
+skills = ["Blockchain", "Crypto", "Pwn"]
 
 [[members]]
 name = "Cristian Di Nicola"
@@ -90,33 +68,12 @@ years = [2024, 2025]
 active = true
 
 [[members]]
-name = "Karina Chichifoi"
-image = "karina_chichifoi.jpg"
-nickname = "trykatchup"
-roles = ["Member", "CyberChallenge.IT 2021"]
-email = "karina.chichifoi@studio.unibo.it"
-website = "https://trykatchup.github.io/"
-active = true
-years = [2022, 2023, 2024, 2025]
-skills = ["OSINT", "Network", "Adversarial AI", "Web"]
-
-[[members]]
 name = "Simone Mazzacano"
 image = "simone_mazzacano.jpg"
 roles = ["Member", "CyberChallenge.IT 2024"]
-skills = ["Pwn"]
+skills = ["Pwn", "Crypto"]
 years = [2023, 2024, 2025]
 active = true
-
-[[members]]
-name = "Filippo Nardon"
-image = "filippo_nardon.jpg"
-nickname = "ufilme"
-active = true
-roles = ["Member"]
-skills = ["Web", "Infra"]
-years = [2023, 2024, 2025]
-website = "https://github.com/ufilme"
 
 [[members]]
 name = "Elia Soldati"
@@ -126,9 +83,56 @@ skills = ["Network", "Infra"]
 years = [2024, 2025]
 active = true
 
+[[members]]
+name = "Giuseppe Aiello"
+active = true
+roles = ["Member", "CyberChallenge.IT 2025"]
+skills = ["Crypto"]
+image = "giuseppe_aiello.png"
+
+[[members]]
+name = "Pietro Bertozzi"
+image = "pietro_bertozzi.jpg"
+email = "b3rtozzipietro@gmail.com"
+website = "https://github.com/pietro-bertozzi"
+skills = ["Crypto"]
+active = true
+years = [2024, 2025]
+roles = ["Member"]
+
 ## -------------- ##
 ## Former members ##
 ## -------------- ##
+
+[[members]]
+name = "Karina Chichifoi"
+image = "karina_chichifoi.jpg"
+nickname = "trykatchup"
+roles = ["Member", "CyberChallenge.IT 2021", "Organizer"]
+email = "karina.chichifoi@studio.unibo.it"
+website = "https://trykatchup.github.io/"
+active = false
+years = [2022, 2023, 2024, 2025]
+skills = ["OSINT", "Network", "AI", "Web", "Infra"]
+
+[[members]]
+name = "Luca Lombardi"
+nickname = "Lombax99"
+roles = ["Member", "CyberChallenge.IT 2021"]
+active = false
+years = [2023, 2024, 2025]
+website = "https://github.com/Lombax99"
+image = "luca_lombardi.jpg"
+
+[[members]]
+name = "Filippo Nardon"
+image = "filippo_nardon.jpg"
+nickname = "ufilme"
+active = false
+roles = ["Member"]
+skills = ["Web", "Infra"]
+years = [2023, 2024, 2025]
+website = "https://github.com/ufilme"
 
 [[members]]
 nickname = "sugo"
@@ -139,8 +143,8 @@ active = false
 nickname = "donnoh"
 website = "https://lucadonnoh.github.io/"
 skills = [
-  "Blockchain Security",
-  "Theoretical Computer Science",
+  "Blockchain",
+  "Theoretical CS",
   "Zero-Knowledge Proofs",
 ]
 active = false
@@ -148,20 +152,20 @@ roles = ["Member and Speaker"]
 category = "speaker"
 
 [[members]]
-nickname = "fuomag"
+nickname = "fuomag9"
 email = "fuomag@gmail.com"
-website = "https://fuo.fi"
-skills = ["Web", "Reverse engineering", "OSINT"]
-roles = ["Member and Speaker"]
+website = "https://hackerone.com/fuomag9"
+skills = ["Web", "Rev", "OSINT"]
+roles = ["Member and Speaker", "Organizer"]
 years = [2023, 2022, 2021]
 active = false
 
 [[members]]
-name = "Kabir"
+name = "Kabir Paolo Singh Bertolani"
 nickname = "amnesy"
 roles = ["Member"]
 email = "amnesy@mintly.it"
-skills = ["Web", "Osint", "Network Analysis", "Insulting PHP"]
+skills = ["Web", "OSINT", "Network", "PHP"]
 active = false
 years = [2023]
 
@@ -169,16 +173,16 @@ years = [2023]
 name = "Lorenzo Guerra"
 nickname = "wor"
 roles = ["Member"]
-email = "guerralorenzo@proton.me"
-website = "https://lorenzo9uerra.github.io"
-skills = ["PWN", "Crypto", "System Administration"]
+email = "lorenzo.guerra5@studio.unibo.it"
+website = "https://lnwor.tech"
+skills = ["Pwn", "Crypto", "Infra"]
 years = [2023]
 active = false
 
 [[members]]
 name = "Giuseppe Mastrodomenico"
 nickname = "Mastr0"
-skills = ["Web exploitation"]
+skills = ["Web"]
 active = false
 years = [2023]
 roles = ["Member"]
@@ -186,11 +190,11 @@ roles = ["Member"]
 [[members]]
 name = "Patrick Papa"
 nickname = "pouup"
-photo = "unknown.png"
+image = "unknown.png"
 roles = ["Member"]
 email = "patrick.papa@studio.unibo.it"
 years = [2023]
-skills = ["Crypto", "PWN", "Crying without tears /s"]
+skills = ["Crypto", "Pwn"]
 active = false
 
 [[members]]
@@ -198,6 +202,154 @@ name = "Gianmaria Rovelli"
 nickname = "xgampx"
 roles = ["Member"]
 website = "https://giammirove.github.io"
-skills = ["Web", "Reverse Engineering", "Low Level Programming"]
+skills = ["Web", "Rev", "Low Level"]
 years = [2023, 2022]
+active = false
+
+[[members]]
+name = "Andrea Melis"
+nickname = "wild_boar"
+image = "Andrea.jpg"
+roles = ["Captain"]
+email = "a.melis@unibo.it"
+website = "http://wildb0ar.com"
+skills = ["Web", "OSINT"]
+active = false
+
+[[members]]
+name = "Davide Berardi"
+nickname = "D"
+image = "Dave.jpg"
+roles = []
+email = "davide.berardi@unibo.it"
+website = "http://cs.unibo.it/~davide.berardi6/"
+skills = ["Pwn", "Hardware"]
+active = false
+
+[[members]]
+name = "Fabrizio Di Cesare"
+image = "Fabbrei.jpg"
+roles = []
+email = "fabrizio.dicesare@studio.unibo.it"
+skills = ["Web", "Steganography", "OSINT"]
+active = false
+
+[[members]]
+name = "Emiliano Ciavatta"
+image = "eciavatta.jpeg"
+roles = []
+email = "emiliano.ciavatta@studio.unibo.it"
+website = "https://eciavatta.dev/"
+skills = ["Software Engineering", "Network"]
+active = false
+
+[[members]]
+name = "Andrea Giovine"
+image = "Andrea_Giovine.png"
+roles = []
+email = "andrea.giovine@studio.unibo.it"
+website = "https://it.linkedin.com/in/andrea-giovine-b32282142"
+skills = ["Blue Team", "Infra", "Coding"]
+active = false
+
+[[members]]
+name = "Simone Berni"
+nickname = "Ossigeno"
+image = "simone.jpg"
+roles = [
+  "he comes he c̶̮omes he comes the ich​or permeates all MY FACE MY FACE ᵒh god no NO NOO̼O​O NΘ stop the an​*̶͑̾̾​̅ͫ͏̙̤g͇̫͛͆̾ͫ̑͆l͖͉̗̩̳̟̍ͫͥͨe̠̅s ͎a̧͈͖r̽̾̈́͒͑e n​ot rè̑ͧ̌aͨl̘̝̙̃ͤ͂̾̆ ZA̡͊͠͝LGΌ ISͮ̂҉̯͈͕̹̘̱ TO͇̹̺ͅƝ̴ȳ̳ TH̘Ë͖́̉ ͠P̯͍̭O̚​N̐Y̡ H̸̡̪̯ͨ͊̽̅̾̎Ȩ̬̩̾͛ͪ̈́̀́͘ ̶̧̨̱̹̭̯ͧ̾ͬC̷̙̲̝͖ͭ̏ͥͮ͟Oͮ͏̮̪̝͍M̲̖͊̒ͪͩͬ̚̚͜Ȇ̴̟̟͙̞ͩ͌͝S̨̥̫͎̭ͯ̿̔̀ͅ"
+]
+email = "simone.berni2@studio.unibo.it"
+website = "https://github.com/0ssigeno/"
+skills = ["Pwn", "Rev", "Malware Analysis"]
+active = false
+
+[[members]]
+name = "Andrea Cavallari"
+nickname = "Passwd"
+image = "andreacavallari.jpg"
+roles = []
+email = "andrea.cavallari5@studio.unibo.it"
+skills = ["Rev", "Pwn"]
+active = false
+
+[[members]]
+name = "Simone Ferraguti"
+nickname = "0x0F 🦊"
+image = "simoneferraguti.jpg"
+roles = []
+email = "simone.ferraguti@studio.unibo.it"
+skills = ["Web", "Infra"]
+active = false
+
+[[members]]
+name = "Andrea Mengascini"
+image = "menga-1.jpg"
+roles = []
+email = "andrea.mengascini@studio.unibo.it"
+skills = ["Threat Intelligence", "Coding"]
+active = false
+
+[[members]]
+name = "Roberto Scolaro"
+nickname = "therealbobo"
+image = "bobo.png"
+roles = []
+email = "roberto.scolaro@studio.unibo.it"
+website = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+skills = ["Pwn", "Rev"]
+active = false
+
+[[members]]
+name = "Federico Mustich"
+nickname = "H4R"
+image = "Mustich.jpg"
+roles = []
+email = "federico.mustich@studio.unibo.it"
+skills = ["Crypto", "Network"]
+active = false
+
+[[members]]
+name = "Vincenzo Bonforte"
+nickname = "Bonfee"
+image = "Bonfee.jpeg"
+roles = []
+email = "884373@stud.unive.it"
+website = "https://bonfee.me"
+skills = ["Pwn", "Coding"]
+active = false
+
+[[members]]
+name = "Marco Bertoni"
+image = "unknown.png"
+roles = ["Novice"]
+email = "marco.bertoni2@studio.unibo.it"
+website = "https://github.com/timmykill"
+skills = ["Rev", "Pwn", "Crypto"]
+active = false
+
+[[members]]
+name = "Francesco Apollonio"
+nickname = "Apo"
+image = "Francesco_Apollonio.jpg"
+roles = []
+email = "francesco.apollonio@studio.unibo.it"
+skills = ["Web", "OSINT"]
+active = false
+
+[[members]]
+name = "Fabio Gaiba"
+image = "Fabio_Gaiba.jpg"
+roles = []
+email = "fabio.gaiba@studio.unibo.it"
+skills = ["Crypto"]
+active = false
+
+[[members]]
+name = "Adriano Pace"
+nickname = "Void"
+image = "Adriano_Pace.jpg"
+roles = []
+email = "adriano.pace@studio.unibo.it"
+skills = ["Pwn", "Rev", "Infra"]
 active = false
