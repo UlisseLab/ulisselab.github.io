@@ -1,23 +1,22 @@
-{{- $team := .Site.Data.team.members -}} {{- $active := where $team "active"
-true -}} {{- $inactive := where $team "active" false -}}
+{{- $team := hugo.Data.team.members -}} {{- $active := where $team "active" true
+-}} {{- $inactive := where $team "active" false -}}
 
 <div>
-    <div>
+    <section>
         <h2>Active members</h2>
-
-        <div class="tw:grid tw:md:grid-cols-2 tw:lg:grid-cols-3 tw:gap-4">
+        <div
+            class="tw:grid tw:md:grid-cols-3 tw:lg:grid-cols-4 tw:gap-4 tw:mt-4"
+        >
             {{ range $active }} {{ partial "member.html" . }} {{ end }}
         </div>
-    </div>
+    </section>
 
-    <details style="margin-top: 2rem">
-        <summary style="margin-bottom: 1rem">
-            <h2 class="tw:inline tw:cursor-pointer tw:underline">
-                Former members
-            </h2>
-        </summary>
-        <div class="tw:grid tw:md:grid-cols-2 tw:lg:grid-cols-3 tw:gap-4">
-            {{ range $inactive }} {{ partial "member.html" . }} {{ end }}
+    <section class="tw:mt-8">
+        <h2 class="tw:underline">Former members</h2>
+        <div
+            class="tw:grid tw:md:grid-cols-3 tw:lg:grid-cols-4 tw:gap-3 tw:mt-4"
+        >
+            {{ range $inactive }} {{ partial "member_small.html" . }} {{ end }}
         </div>
-    </details>
+    </section>
 </div>

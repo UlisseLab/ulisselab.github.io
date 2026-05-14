@@ -1,0 +1,79 @@
+<div
+    class="twp tw:flex tw:flex-col tw:gap-3 tw:p-4 tw:rounded-xl tw:border tw:shadow-sm tw:transition-all tw:hover:border-primary/50 tw:hover:shadow-md"
+>
+    <!-- Header: Image | Name | Icons -->
+    <div class="tw:grid tw:grid-cols-[auto_1fr_auto] tw:items-center tw:gap-3">
+        {{- $processedImage := "" -}} {{- $imageResource := "" -}} {{- if .image
+        -}} {{- $imagePath := printf "people/%s" .image -}} {{- $imageResource =
+        resources.Get $imagePath -}} {{- end -}} {{- if not $imageResource -}}
+        {{- $imageResource = resources.Get "people/unknown.jpg" -}} {{- end -}}
+        {{- if $imageResource -}} {{- $processedImage = $imageResource.Process
+        "webp" | resources.Fingerprint -}} {{- end -}} {{- if $processedImage
+        -}}
+        <img
+            src="{{ $processedImage.RelPermalink }}"
+            alt="{{ if .name }}{{ .name }}{{ else }}{{ if .nickname }}{{ .nickname }}{{ else }}Unknown{{ end }}{{ end }}"
+            class="tw:w-12 tw:h-12 tw:rounded-full tw:object-cover tw:border tw:shadow-sm tw:flex-shrink-0 tw:!m-0"
+        />
+        {{- end -}}
+
+        <div class="tw:flex tw:flex-col tw:gap-0.5 tw:min-w-0">
+            <h4 class="tw:text-sm tw:font-semibold tw:leading-tight tw:break-words tw:!m-0">
+                {{- if .name -}}
+                {{- .name -}}
+                {{- else if .nickname -}}
+                {{- .nickname -}}
+                {{- end -}}
+            </h4>
+
+            {{- if and .name .nickname -}}
+            <span
+                class="tw:text-[10px] tw:font-normal tw:opacity-60 tw:font-mono"
+            >
+                aka {{ .nickname }}
+            </span>
+            {{- end -}}
+        </div>
+
+        <div
+            class="tw:flex tw:flex-col tw:gap-1.5 tw:opacity-70 tw:hover:opacity-100 tw:transition-opacity"
+        >
+            {{- if .email }}
+            <a
+                href="mailto:{{ .email }}"
+                class="tw:text-base tw:!no-underline tw:leading-none"
+                title="Email"
+            >
+                📧
+            </a>
+            {{- end -}} {{- if .website }}
+            <a
+                href="{{ .website }}"
+                class="tw:text-base tw:!no-underline tw:leading-none"
+                title="Website"
+            >
+                🌐
+            </a>
+            {{- end -}}
+        </div>
+    </div>
+
+    <!-- Details: Roles & Skills -->
+    {{- with .roles }}
+    <div class="tw:text-xs tw:opacity-80">
+        <span class="tw:font-bold tw:text-secondary">Info:</span>
+        <div class="tw:mt-0.5 tw:italic tw:break-words">
+            {{ delimit . " • " }}
+        </div>
+    </div>
+    {{- end }} {{- with .skills }}
+    <div class="tw:flex tw:flex-wrap tw:gap-1">
+        {{- range . }}
+        <span
+            class="tw:text-[10px] tw:px-1.5 tw:py-0.5 tw:rounded-md tw:bg-base-300/50 tw:opacity-80"
+            >{{ . }}</span
+        >
+        {{- end }}
+    </div>
+    {{- end }}
+</div>
