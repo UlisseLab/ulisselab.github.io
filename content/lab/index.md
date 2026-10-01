@@ -30,4 +30,5 @@ We meet in the "Aule Nuove" building, which is the newest building of the comple
 ### Contact
 
 You can contact us at the following email address: [disi.ulisse@unibo.it](mailto:disi.ulisse@unibo.it)
-If you have any questions ask in our telegram group! [Telegram](https://t.me/c/1640565234/1)
+
+If you have any questions ask in our telegram group! [Telegram](https://t.me/+2irDkiTmCBo5YmI6)
